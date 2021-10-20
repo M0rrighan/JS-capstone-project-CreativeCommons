@@ -41,6 +41,7 @@ const listenOpenModalBtns = (buttons) => {
         <p><a href="${sourcePageUrl}"> Visit Source</a></p>
       </div>
       <div class="popup-comments"> Comments Here
+      <p>Comments: ${Involvment.getComments}</p>
       </div>     
       `;
       document.querySelector('body').appendChild(modal);

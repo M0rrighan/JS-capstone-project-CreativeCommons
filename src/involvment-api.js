@@ -8,8 +8,27 @@ export const getLikes = async () => {
   return likes;
 };
 
+export const getComments = async () => {
+  const commentsResult = await fetch(`${involvmentBaseUrl}apps/${appKey}/comments/`, { method: 'GET' });
+  const comments = await commentsResult.text();
+  return comments;
+};
+
+
 export const postLike = async (itemId) => {
   await fetch(`${involvmentBaseUrl}apps/${appKey}/likes/`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      item_id: `${itemId}`,
+    }),
+  });
+};
+
+export const postComments = async (itemId) => {
+  await fetch(`${involvmentBaseUrl}apps/${appKey}/comments/`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

@@ -7,6 +7,7 @@ const readLikesNum = (likesArray, id) => {
   return likedItem.likes;
 };
 
+
 export const generateListHtml = (list, ulContainer, likesArray) => {
   let ulInner = '';
   list.forEach((item) => {
