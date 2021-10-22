@@ -68,4 +68,4 @@ const renderPage = async (pageNum) => {
   listenOpenModalBtns(document.querySelectorAll('[data-open-modal]'));
 };
 
-renderPage(37);
+renderPage(7);
