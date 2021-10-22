@@ -1,166 +1,797 @@
-/*
- * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
-/******/ 	var __webpack_modules__ = ({
-
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
-/*!*************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
-  \*************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap);\"]);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\r\\n  padding: 0;\\r\\n  margin: 0;\\r\\n  box-sizing: border-box;\\r\\n  font-family: 'Courier New', Courier, monospace;\\r\\n  font-weight: bold;\\r\\n}\\r\\n\\r\\n* a {\\r\\n  text-decoration: none;\\r\\n  color: inherit;\\r\\n}\\r\\n\\r\\n* ul li {\\r\\n  list-style-type: none;\\r\\n}\\r\\n\\r\\n/*\\r\\n    ===========================\\r\\n    ******** Global ********\\r\\n    ===========================\\r\\n*/\\r\\nbody {\\r\\n  padding: 0;\\r\\n  margin: 0;\\r\\n  background-color: #e5e5e5;\\r\\n}\\r\\n\\r\\n.btn {\\r\\n  cursor: pointer;\\r\\n}\\r\\n\\r\\n.overlay {\\r\\n  position: fixed;\\r\\n  top: 0;\\r\\n  bottom: 0;\\r\\n  left: 0;\\r\\n  right: 0;\\r\\n  background-color: hsla(0, 0%, 0%, 0.8);\\r\\n  opacity: 0;\\r\\n  z-index: -5;\\r\\n}\\r\\n\\r\\n.overlay.active {\\r\\n  opacity: 1;\\r\\n  z-index: 5;\\r\\n}\\r\\n\\r\\n/*\\r\\n    ===========================\\r\\n    ******** Layout ********\\r\\n    ===========================\\r\\n*/\\r\\n#header {\\r\\n  width: 100%;\\r\\n  background-color: #fff;\\r\\n}\\r\\n\\r\\n.logo {\\r\\n  font-family: \\\"Poppins\\\", sans-serif;\\r\\n  font-style: normal;\\r\\n  font-weight: bold;\\r\\n  font-size: 15px;\\r\\n  line-height: 20px;\\r\\n  color: hsl(0, 0%, 11%);\\r\\n}\\r\\n\\r\\n.logo a {\\r\\n  text-decoration: none;\\r\\n}\\r\\n\\r\\n.header-container {\\r\\n  display: flex;\\r\\n  justify-content: space-between;\\r\\n  width: 90%;\\r\\n  align-items: center;\\r\\n  margin: 0 auto;\\r\\n  height: 4rem;\\r\\n}\\r\\n\\r\\n.navbar {\\r\\n  display: flex;\\r\\n  align-items: center;\\r\\n  line-height: 4rem;\\r\\n  height: 100%;\\r\\n}\\r\\n\\r\\n.d-navbar {\\r\\n  display: flex;\\r\\n  list-style-type: none;\\r\\n  height: 100%;\\r\\n}\\r\\n\\r\\n.d-navbar li {\\r\\n  margin-left: 1rem;\\r\\n}\\r\\n\\r\\n.d-navbar li a {\\r\\n  color: hsl(0, 0%, 3%);\\r\\n}\\r\\n\\r\\n.a-navbar {\\r\\n  text-decoration: none;\\r\\n  height: 2em;\\r\\n  padding: 0.5em 1em;\\r\\n}\\r\\n\\r\\n.navbar .humberger i {\\r\\n  font-size: 22px;\\r\\n  font-weight: 600;\\r\\n  color: hsl(0, 0%, 4%);\\r\\n}\\r\\n\\r\\n.navbar ul {\\r\\n  list-style: none;\\r\\n  margin: 0;\\r\\n  padding: 0;\\r\\n  display: flex;\\r\\n  gap: 16px;\\r\\n  padding-top: 12px;\\r\\n  padding-bottom: 12px;\\r\\n}\\r\\n\\r\\n/* End Header */\\r\\n\\r\\n.items-container {\\r\\n  width: 90%;\\r\\n  display: grid;\\r\\n  grid-template-columns: 1fr;\\r\\n  justify-items: center;\\r\\n  gap: 1.5rem;\\r\\n  margin: 2rem auto;\\r\\n}\\r\\n\\r\\n.item-card {\\r\\n  min-width: 18rem;\\r\\n  max-width: 24rem;\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  align-items: flex-end;\\r\\n  gap: 1rem;\\r\\n  border-radius: 0.5rem;\\r\\n  box-shadow: 0.25rem 0.25rem 0.5rem hsl(26, 32%, 29%);\\r\\n}\\r\\n\\r\\n.item-card .card-top {\\r\\n  width: 100%;\\r\\n  height: 65%;\\r\\n  position: relative;\\r\\n  background-color: hsl(0, 0%, 75%);\\r\\n}\\r\\n\\r\\n.item-card .card-top .thumbnail-placeholder {\\r\\n  width: 100%;\\r\\n  height: 100%;\\r\\n  overflow: hidden;\\r\\n  display: flex;\\r\\n  justify-content: center;\\r\\n  align-items: flex-start;\\r\\n}\\r\\n\\r\\n.item-card .card-top img {\\r\\n  width: 100%;\\r\\n}\\r\\n\\r\\n.item-card .card-top,\\r\\n.item-card .card-top .thumbnail-placeholder,\\r\\n.item-card .card-top img {\\r\\n  border-top-left-radius: 0.5rem;\\r\\n  border-top-right-radius: 0.5rem;\\r\\n}\\r\\n\\r\\n.item-card .card-top p {\\r\\n  position: absolute;\\r\\n  bottom: 0;\\r\\n  width: 100%;\\r\\n  padding: 0.5rem;\\r\\n  font-size: 1.5rem;\\r\\n  font-weight: bold;\\r\\n  color: hsl(39, 14%, 80%);\\r\\n  background-color: hsla(0, 0%, 13%, 0.7);\\r\\n}\\r\\n\\r\\n.item-card .likes {\\r\\n  padding: 0.5rem;\\r\\n}\\r\\n\\r\\nfooter {\\r\\n  width: 100%;\\r\\n  justify-content: center;\\r\\n  margin: auto;\\r\\n  margin-top: 10px;\\r\\n  flex-shrink: 0;\\r\\n  background-color: white;\\r\\n  bottom: 0;\\r\\n  border-style: solid;\\r\\n}\\r\\n\\r\\n/*\\r\\n    ===========================\\r\\n    ******** PopUp ********\\r\\n    ===========================\\r\\n*/\\r\\n.modal {\\r\\n  position: fixed;\\r\\n  top: 2.75rem;\\r\\n  left: 1rem;\\r\\n  right: 1rem;\\r\\n  bottom: 1rem;\\r\\n  border-radius: 1rem;\\r\\n  z-index: 10;\\r\\n  background-color: #fff;\\r\\n  height: unset;\\r\\n  overflow-y: auto;\\r\\n  transform: scale(0);\\r\\n  transition: 600ms ease-in-out;\\r\\n}\\r\\n\\r\\n.modal.active {\\r\\n  transform: scale(1);\\r\\n  transition: 600ms ease-in-out;\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  align-items: center;\\r\\n  padding: 1rem;\\r\\n}\\r\\n\\r\\n.close_modal {\\r\\n  position: absolute;\\r\\n  right: 1rem;\\r\\n  top: 1rem;\\r\\n}\\r\\n\\r\\n.modal.active .image-placeholder {\\r\\n  width: 100%;\\r\\n  display: flex;\\r\\n  justify-content: center;\\r\\n}\\r\\n\\r\\n.modal.active .image-placeholder img {\\r\\n  height: 55vh;\\r\\n}\\r\\n\\r\\n.modal.active .modal-inner {\\r\\n  padding: 1rem;\\r\\n  \\r\\n  /* height: 30vh;\\r\\n  overflow-y: scroll; */\\r\\n}\\r\\n\\r\\n.modal.active .modal-inner .comment-form {\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  gap: 0.75rem;\\r\\n}\\r\\n\\r\\n/*\\r\\n    ============================================\\r\\n    ******* MEDIA QUERY *******\\r\\n    ============================================\\r\\n*/\\r\\n\\r\\n@media screen and (max-width: 600px) {\\r\\n  .d-navbar {\\r\\n    display: none;\\r\\n  }\\r\\n}\\r\\n\\r\\n@media screen and (min-width: 600px) {\\r\\n  .humberger {\\r\\n    display: none;\\r\\n  }\\r\\n}\\r\\n\\r\\n@media only screen and (min-width: 48rem) {\\r\\n  .items-container {\\r\\n    grid-template-columns: 1fr 1fr;\\r\\n  }\\r\\n}\\r\\n\\r\\n@media only screen and (min-width: 64rem) {\\r\\n  .items-container {\\r\\n    grid-template-columns: 1fr 1fr 1fr;\\r\\n  }\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://JS-Capstone/./src/style.css?./node_modules/css-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/runtime/api.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
-  \*****************************************************/
-/***/ ((module) => {
-
-eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\n// eslint-disable-next-line func-names\nmodule.exports = function (cssWithMappingToString) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item);\n\n      if (item[2]) {\n        return \"@media \".concat(item[2], \" {\").concat(content, \"}\");\n      }\n\n      return content;\n    }).join(\"\");\n  }; // import a list of modules into the list\n  // eslint-disable-next-line func-names\n\n\n  list.i = function (modules, mediaQuery, dedupe) {\n    if (typeof modules === \"string\") {\n      // eslint-disable-next-line no-param-reassign\n      modules = [[null, modules, \"\"]];\n    }\n\n    var alreadyImportedModules = {};\n\n    if (dedupe) {\n      for (var i = 0; i < this.length; i++) {\n        // eslint-disable-next-line prefer-destructuring\n        var id = this[i][0];\n\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n\n    for (var _i = 0; _i < modules.length; _i++) {\n      var item = [].concat(modules[_i]);\n\n      if (dedupe && alreadyImportedModules[item[0]]) {\n        // eslint-disable-next-line no-continue\n        continue;\n      }\n\n      if (mediaQuery) {\n        if (!item[2]) {\n          item[2] = mediaQuery;\n        } else {\n          item[2] = \"\".concat(mediaQuery, \" and \").concat(item[2]);\n        }\n      }\n\n      list.push(item);\n    }\n  };\n\n  return list;\n};\n\n//# sourceURL=webpack://JS-Capstone/./node_modules/css-loader/dist/runtime/api.js?");
-
-/***/ }),
-
-/***/ "./src/style.css":
-/*!***********************!*\
-  !*** ./src/style.css ***!
-  \***********************/
+/******/ 	var __webpack_modules__ = ([
+/* 0 */,
+/* 1 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/styleDomAPI.js */ \"./node_modules/style-loader/dist/runtime/styleDomAPI.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/insertBySelector.js */ \"./node_modules/style-loader/dist/runtime/insertBySelector.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ \"./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/insertStyleElement.js */ \"./node_modules/style-loader/dist/runtime/insertStyleElement.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/styleTagTransform.js */ \"./node_modules/style-loader/dist/runtime/styleTagTransform.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../node_modules/css-loader/dist/cjs.js!./style.css */ \"./node_modules/css-loader/dist/cjs.js!./src/style.css\");\n\n      \n      \n      \n      \n      \n      \n      \n      \n      \n\nvar options = {};\n\noptions.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());\noptions.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());\n\n      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, \"head\");\n    \noptions.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());\noptions.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());\n\nvar update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"], options);\n\n\n\n\n       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"] && _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals ? _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals : undefined);\n\n\n//# sourceURL=webpack://JS-Capstone/./src/style.css?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(8);
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
 
 /***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
-/*!****************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
-  \****************************************************************************/
+/* 2 */
 /***/ ((module) => {
 
-eval("\n\nvar stylesInDom = [];\n\nfunction getIndexByIdentifier(identifier) {\n  var result = -1;\n\n  for (var i = 0; i < stylesInDom.length; i++) {\n    if (stylesInDom[i].identifier === identifier) {\n      result = i;\n      break;\n    }\n  }\n\n  return result;\n}\n\nfunction modulesToDom(list, options) {\n  var idCountMap = {};\n  var identifiers = [];\n\n  for (var i = 0; i < list.length; i++) {\n    var item = list[i];\n    var id = options.base ? item[0] + options.base : item[0];\n    var count = idCountMap[id] || 0;\n    var identifier = \"\".concat(id, \" \").concat(count);\n    idCountMap[id] = count + 1;\n    var index = getIndexByIdentifier(identifier);\n    var obj = {\n      css: item[1],\n      media: item[2],\n      sourceMap: item[3]\n    };\n\n    if (index !== -1) {\n      stylesInDom[index].references++;\n      stylesInDom[index].updater(obj);\n    } else {\n      stylesInDom.push({\n        identifier: identifier,\n        updater: addStyle(obj, options),\n        references: 1\n      });\n    }\n\n    identifiers.push(identifier);\n  }\n\n  return identifiers;\n}\n\nfunction addStyle(obj, options) {\n  var api = options.domAPI(options);\n  api.update(obj);\n  return function updateStyle(newObj) {\n    if (newObj) {\n      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap) {\n        return;\n      }\n\n      api.update(obj = newObj);\n    } else {\n      api.remove();\n    }\n  };\n}\n\nmodule.exports = function (list, options) {\n  options = options || {};\n  list = list || [];\n  var lastIdentifiers = modulesToDom(list, options);\n  return function update(newList) {\n    newList = newList || [];\n\n    for (var i = 0; i < lastIdentifiers.length; i++) {\n      var identifier = lastIdentifiers[i];\n      var index = getIndexByIdentifier(identifier);\n      stylesInDom[index].references--;\n    }\n\n    var newLastIdentifiers = modulesToDom(newList, options);\n\n    for (var _i = 0; _i < lastIdentifiers.length; _i++) {\n      var _identifier = lastIdentifiers[_i];\n\n      var _index = getIndexByIdentifier(_identifier);\n\n      if (stylesInDom[_index].references === 0) {\n        stylesInDom[_index].updater();\n\n        stylesInDom.splice(_index, 1);\n      }\n    }\n\n    lastIdentifiers = newLastIdentifiers;\n  };\n};\n\n//# sourceURL=webpack://JS-Capstone/./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js?");
+
+
+var stylesInDOM = [];
+
+function getIndexByIdentifier(identifier) {
+  var result = -1;
+
+  for (var i = 0; i < stylesInDOM.length; i++) {
+    if (stylesInDOM[i].identifier === identifier) {
+      result = i;
+      break;
+    }
+  }
+
+  return result;
+}
+
+function modulesToDom(list, options) {
+  var idCountMap = {};
+  var identifiers = [];
+
+  for (var i = 0; i < list.length; i++) {
+    var item = list[i];
+    var id = options.base ? item[0] + options.base : item[0];
+    var count = idCountMap[id] || 0;
+    var identifier = "".concat(id, " ").concat(count);
+    idCountMap[id] = count + 1;
+    var indexByIdentifier = getIndexByIdentifier(identifier);
+    var obj = {
+      css: item[1],
+      media: item[2],
+      sourceMap: item[3],
+      supports: item[4],
+      layer: item[5]
+    };
+
+    if (indexByIdentifier !== -1) {
+      stylesInDOM[indexByIdentifier].references++;
+      stylesInDOM[indexByIdentifier].updater(obj);
+    } else {
+      var updater = addElementStyle(obj, options);
+      options.byIndex = i;
+      stylesInDOM.splice(i, 0, {
+        identifier: identifier,
+        updater: updater,
+        references: 1
+      });
+    }
+
+    identifiers.push(identifier);
+  }
+
+  return identifiers;
+}
+
+function addElementStyle(obj, options) {
+  var api = options.domAPI(options);
+  api.update(obj);
+
+  var updater = function updater(newObj) {
+    if (newObj) {
+      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap && newObj.supports === obj.supports && newObj.layer === obj.layer) {
+        return;
+      }
+
+      api.update(obj = newObj);
+    } else {
+      api.remove();
+    }
+  };
+
+  return updater;
+}
+
+module.exports = function (list, options) {
+  options = options || {};
+  list = list || [];
+  var lastIdentifiers = modulesToDom(list, options);
+  return function update(newList) {
+    newList = newList || [];
+
+    for (var i = 0; i < lastIdentifiers.length; i++) {
+      var identifier = lastIdentifiers[i];
+      var index = getIndexByIdentifier(identifier);
+      stylesInDOM[index].references--;
+    }
+
+    var newLastIdentifiers = modulesToDom(newList, options);
+
+    for (var _i = 0; _i < lastIdentifiers.length; _i++) {
+      var _identifier = lastIdentifiers[_i];
+
+      var _index = getIndexByIdentifier(_identifier);
+
+      if (stylesInDOM[_index].references === 0) {
+        stylesInDOM[_index].updater();
+
+        stylesInDOM.splice(_index, 1);
+      }
+    }
+
+    lastIdentifiers = newLastIdentifiers;
+  };
+};
 
 /***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/insertBySelector.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/insertBySelector.js ***!
-  \********************************************************************/
+/* 3 */
 /***/ ((module) => {
 
-eval("\n\nvar memo = {};\n/* istanbul ignore next  */\n\nfunction getTarget(target) {\n  if (typeof memo[target] === \"undefined\") {\n    var styleTarget = document.querySelector(target); // Special case to return head of iframe instead of iframe itself\n\n    if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {\n      try {\n        // This will throw an exception if access to iframe is blocked\n        // due to cross-origin restrictions\n        styleTarget = styleTarget.contentDocument.head;\n      } catch (e) {\n        // istanbul ignore next\n        styleTarget = null;\n      }\n    }\n\n    memo[target] = styleTarget;\n  }\n\n  return memo[target];\n}\n/* istanbul ignore next  */\n\n\nfunction insertBySelector(insert, style) {\n  var target = getTarget(insert);\n\n  if (!target) {\n    throw new Error(\"Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.\");\n  }\n\n  target.appendChild(style);\n}\n\nmodule.exports = insertBySelector;\n\n//# sourceURL=webpack://JS-Capstone/./node_modules/style-loader/dist/runtime/insertBySelector.js?");
+
+
+/* istanbul ignore next  */
+function apply(styleElement, options, obj) {
+  var css = "";
+
+  if (obj.supports) {
+    css += "@supports (".concat(obj.supports, ") {");
+  }
+
+  if (obj.media) {
+    css += "@media ".concat(obj.media, " {");
+  }
+
+  var needLayer = typeof obj.layer !== "undefined";
+
+  if (needLayer) {
+    css += "@layer".concat(obj.layer.length > 0 ? " ".concat(obj.layer) : "", " {");
+  }
+
+  css += obj.css;
+
+  if (needLayer) {
+    css += "}";
+  }
+
+  if (obj.media) {
+    css += "}";
+  }
+
+  if (obj.supports) {
+    css += "}";
+  }
+
+  var sourceMap = obj.sourceMap;
+
+  if (sourceMap && typeof btoa !== "undefined") {
+    css += "\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), " */");
+  } // For old IE
+
+  /* istanbul ignore if  */
+
+
+  options.styleTagTransform(css, styleElement, options.options);
+}
+
+function removeStyleElement(styleElement) {
+  // istanbul ignore if
+  if (styleElement.parentNode === null) {
+    return false;
+  }
+
+  styleElement.parentNode.removeChild(styleElement);
+}
+/* istanbul ignore next  */
+
+
+function domAPI(options) {
+  var styleElement = options.insertStyleElement(options);
+  return {
+    update: function update(obj) {
+      apply(styleElement, options, obj);
+    },
+    remove: function remove() {
+      removeStyleElement(styleElement);
+    }
+  };
+}
+
+module.exports = domAPI;
 
 /***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/insertStyleElement.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/insertStyleElement.js ***!
-  \**********************************************************************/
+/* 4 */
 /***/ ((module) => {
 
-eval("\n\n/* istanbul ignore next  */\nfunction insertStyleElement(options) {\n  var style = document.createElement(\"style\");\n  options.setAttributes(style, options.attributes);\n  options.insert(style);\n  return style;\n}\n\nmodule.exports = insertStyleElement;\n\n//# sourceURL=webpack://JS-Capstone/./node_modules/style-loader/dist/runtime/insertStyleElement.js?");
+
+
+var memo = {};
+/* istanbul ignore next  */
+
+function getTarget(target) {
+  if (typeof memo[target] === "undefined") {
+    var styleTarget = document.querySelector(target); // Special case to return head of iframe instead of iframe itself
+
+    if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
+      try {
+        // This will throw an exception if access to iframe is blocked
+        // due to cross-origin restrictions
+        styleTarget = styleTarget.contentDocument.head;
+      } catch (e) {
+        // istanbul ignore next
+        styleTarget = null;
+      }
+    }
+
+    memo[target] = styleTarget;
+  }
+
+  return memo[target];
+}
+/* istanbul ignore next  */
+
+
+function insertBySelector(insert, style) {
+  var target = getTarget(insert);
+
+  if (!target) {
+    throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");
+  }
+
+  target.appendChild(style);
+}
+
+module.exports = insertBySelector;
 
 /***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js":
-/*!**********************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js ***!
-  \**********************************************************************************/
+/* 5 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("\n\n/* istanbul ignore next  */\nfunction setAttributesWithoutAttributes(style) {\n  var nonce =  true ? __webpack_require__.nc : 0;\n\n  if (nonce) {\n    style.setAttribute(\"nonce\", nonce);\n  }\n}\n\nmodule.exports = setAttributesWithoutAttributes;\n\n//# sourceURL=webpack://JS-Capstone/./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js?");
+
+
+/* istanbul ignore next  */
+function setAttributesWithoutAttributes(styleElement) {
+  var nonce =  true ? __webpack_require__.nc : 0;
+
+  if (nonce) {
+    styleElement.setAttribute("nonce", nonce);
+  }
+}
+
+module.exports = setAttributesWithoutAttributes;
 
 /***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/styleDomAPI.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/styleDomAPI.js ***!
-  \***************************************************************/
+/* 6 */
 /***/ ((module) => {
 
-eval("\n\n/* istanbul ignore next  */\nfunction apply(style, options, obj) {\n  var css = obj.css;\n  var media = obj.media;\n  var sourceMap = obj.sourceMap;\n\n  if (media) {\n    style.setAttribute(\"media\", media);\n  } else {\n    style.removeAttribute(\"media\");\n  }\n\n  if (sourceMap && typeof btoa !== \"undefined\") {\n    css += \"\\n/*# sourceMappingURL=data:application/json;base64,\".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), \" */\");\n  } // For old IE\n\n  /* istanbul ignore if  */\n\n\n  options.styleTagTransform(css, style);\n}\n\nfunction removeStyleElement(style) {\n  // istanbul ignore if\n  if (style.parentNode === null) {\n    return false;\n  }\n\n  style.parentNode.removeChild(style);\n}\n/* istanbul ignore next  */\n\n\nfunction domAPI(options) {\n  var style = options.insertStyleElement(options);\n  return {\n    update: function update(obj) {\n      apply(style, options, obj);\n    },\n    remove: function remove() {\n      removeStyleElement(style);\n    }\n  };\n}\n\nmodule.exports = domAPI;\n\n//# sourceURL=webpack://JS-Capstone/./node_modules/style-loader/dist/runtime/styleDomAPI.js?");
+
+
+/* istanbul ignore next  */
+function insertStyleElement(options) {
+  var element = document.createElement("style");
+  options.setAttributes(element, options.attributes);
+  options.insert(element, options.options);
+  return element;
+}
+
+module.exports = insertStyleElement;
 
 /***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/styleTagTransform.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/styleTagTransform.js ***!
-  \*********************************************************************/
+/* 7 */
 /***/ ((module) => {
 
-eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, style) {\n  if (style.styleSheet) {\n    style.styleSheet.cssText = css;\n  } else {\n    while (style.firstChild) {\n      style.removeChild(style.firstChild);\n    }\n\n    style.appendChild(document.createTextNode(css));\n  }\n}\n\nmodule.exports = styleTagTransform;\n\n//# sourceURL=webpack://JS-Capstone/./node_modules/style-loader/dist/runtime/styleTagTransform.js?");
+
+
+/* istanbul ignore next  */
+function styleTagTransform(css, styleElement) {
+  if (styleElement.styleSheet) {
+    styleElement.styleSheet.cssText = css;
+  } else {
+    while (styleElement.firstChild) {
+      styleElement.removeChild(styleElement.firstChild);
+    }
+
+    styleElement.appendChild(document.createTextNode(css));
+  }
+}
+
+module.exports = styleTagTransform;
 
 /***/ }),
+/* 8 */
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-/***/ "./src/cc-api.js":
-/*!***********************!*\
-  !*** ./src/cc-api.js ***!
-  \***********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(10);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"processPageResult\": () => (/* binding */ processPageResult),\n/* harmony export */   \"getDetailsForItem\": () => (/* binding */ getDetailsForItem)\n/* harmony export */ });\n/* eslint-disable import/prefer-default-export */\r\nconst ccBaseUrl = 'https://api.creativecommons.engineering/v1/images';\r\nconst header = new Headers({ 'Content-type': 'application/json; charset=UTF-8' });\r\n\r\nconst fetchPage = async (pageNum) => {\r\n  const result = await fetch(`${ccBaseUrl}?categories=photograph&page=${pageNum}`, {\r\n    method: 'GET',\r\n    headers: header,\r\n    mode: 'cors',\r\n  });\r\n  return result.json();\r\n};\r\n\r\nconst fetchItemDetails = async (id) => {\r\n  const result = await fetch(`${ccBaseUrl}/${id}`);\r\n  return result.json();\r\n};\r\n\r\nconst getPageData = async (pageNum) => {\r\n  const dataFromApi = await fetchPage(pageNum);\r\n  return dataFromApi.results;\r\n};\r\n\r\nconst processPageResult = async (pageNum) => {\r\n  const returnedDataForPage = await getPageData(pageNum);\r\n  return [...returnedDataForPage]\r\n    .map((item) => ({ id: item.id, thumbnailUrl: item.thumbnail, title: item.title }));\r\n};\r\n\r\nconst getDetailsForItem = async (id) => {\r\n  const itemDetails = await fetchItemDetails(id);\r\n  return ({\r\n    title: itemDetails.title,\r\n    url: itemDetails.url,\r\n    creator: itemDetails.creator,\r\n    license: itemDetails.license,\r\n    source: itemDetails.source,\r\n    sourcePageUrl: itemDetails.foreign_landing_url,\r\n  });\r\n};\r\n\n\n//# sourceURL=webpack://JS-Capstone/./src/cc-api.js?");
 
-/***/ }),
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap);"]);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n  padding: 0;\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n  font-family: 'Courier New', Courier, monospace;\r\n  font-weight: bold;\r\n}\r\n\r\n* a {\r\n  text-decoration: none;\r\n  color: inherit;\r\n}\r\n\r\n* ul li {\r\n  list-style-type: none;\r\n}\r\n\r\n/*\r\n    ===========================\r\n    ******** Global ********\r\n    ===========================\r\n*/\r\nbody {\r\n  padding: 0;\r\n  margin: 0;\r\n  background-color: #e5e5e5;\r\n}\r\n\r\n.btn {\r\n  cursor: pointer;\r\n}\r\n\r\n.overlay {\r\n  position: fixed;\r\n  top: 0;\r\n  bottom: 0;\r\n  left: 0;\r\n  right: 0;\r\n  background-color: hsla(0, 0%, 0%, 0.8);\r\n  opacity: 0;\r\n  z-index: -5;\r\n}\r\n\r\n.overlay.active {\r\n  opacity: 1;\r\n  z-index: 5;\r\n}\r\n\r\n/*\r\n    ===========================\r\n    ******** Layout ********\r\n    ===========================\r\n*/\r\n#header {\r\n  width: 100%;\r\n  background-color: #fff;\r\n}\r\n\r\n.logo {\r\n  font-family: \"Poppins\", sans-serif;\r\n  font-style: normal;\r\n  font-weight: bold;\r\n  font-size: 15px;\r\n  line-height: 20px;\r\n  color: hsl(0, 0%, 11%);\r\n}\r\n\r\n.logo a {\r\n  text-decoration: none;\r\n}\r\n\r\n.header-container {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  width: 90%;\r\n  align-items: center;\r\n  margin: 0 auto;\r\n  height: 4rem;\r\n}\r\n\r\n.navbar {\r\n  display: flex;\r\n  align-items: center;\r\n  line-height: 4rem;\r\n  height: 100%;\r\n}\r\n\r\n.d-navbar {\r\n  display: flex;\r\n  list-style-type: none;\r\n  height: 100%;\r\n}\r\n\r\n.d-navbar li {\r\n  margin-left: 1rem;\r\n}\r\n\r\n.d-navbar li a {\r\n  color: hsl(0, 0%, 3%);\r\n}\r\n\r\n.a-navbar {\r\n  text-decoration: none;\r\n  height: 2em;\r\n  padding: 0.5em 1em;\r\n}\r\n\r\n.navbar .humberger i {\r\n  font-size: 22px;\r\n  font-weight: 600;\r\n  color: hsl(0, 0%, 4%);\r\n}\r\n\r\n.navbar ul {\r\n  list-style: none;\r\n  margin: 0;\r\n  padding: 0;\r\n  display: flex;\r\n  gap: 16px;\r\n  padding-top: 12px;\r\n  padding-bottom: 12px;\r\n}\r\n\r\n/* End Header */\r\n\r\n.items-container {\r\n  width: 90%;\r\n  display: grid;\r\n  grid-template-columns: 1fr;\r\n  justify-items: center;\r\n  gap: 1.5rem;\r\n  margin: 2rem auto;\r\n}\r\n\r\n.item-card {\r\n  min-width: 18rem;\r\n  max-width: 24rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: flex-end;\r\n  gap: 1rem;\r\n  border-radius: 0.5rem;\r\n  box-shadow: 0.25rem 0.25rem 0.5rem hsl(26, 32%, 29%);\r\n}\r\n\r\n.item-card .card-top {\r\n  width: 100%;\r\n  height: 65%;\r\n  position: relative;\r\n  background-color: hsl(0, 0%, 75%);\r\n}\r\n\r\n.item-card .card-top .thumbnail-placeholder {\r\n  width: 100%;\r\n  height: 100%;\r\n  overflow: hidden;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: flex-start;\r\n}\r\n\r\n.item-card .card-top img {\r\n  width: 100%;\r\n}\r\n\r\n.item-card .card-top,\r\n.item-card .card-top .thumbnail-placeholder,\r\n.item-card .card-top img {\r\n  border-top-left-radius: 0.5rem;\r\n  border-top-right-radius: 0.5rem;\r\n}\r\n\r\n.item-card .card-top p {\r\n  position: absolute;\r\n  bottom: 0;\r\n  width: 100%;\r\n  padding: 0.5rem;\r\n  font-size: 1.5rem;\r\n  font-weight: bold;\r\n  color: hsl(39, 14%, 80%);\r\n  background-color: hsla(0, 0%, 13%, 0.7);\r\n}\r\n\r\n.item-card .likes {\r\n  padding: 0.5rem;\r\n}\r\n\r\nfooter {\r\n  width: 100%;\r\n  justify-content: center;\r\n  margin: auto;\r\n  margin-top: 10px;\r\n  flex-shrink: 0;\r\n  background-color: white;\r\n  bottom: 0;\r\n  border-style: solid;\r\n}\r\n\r\n/*\r\n    ===========================\r\n    ******** PopUp ********\r\n    ===========================\r\n*/\r\n.modal {\r\n  position: fixed;\r\n  top: 2.75rem;\r\n  left: 1rem;\r\n  right: 1rem;\r\n  bottom: 1rem;\r\n  border-radius: 1rem;\r\n  z-index: 10;\r\n  background-color: #fff;\r\n  height: unset;\r\n  overflow-y: auto;\r\n  transform: scale(0);\r\n  transition: 600ms ease-in-out;\r\n}\r\n\r\n.modal.active {\r\n  transform: scale(1);\r\n  transition: 600ms ease-in-out;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  padding: 1rem;\r\n}\r\n\r\n.close_modal {\r\n  position: absolute;\r\n  right: 1rem;\r\n  top: 1rem;\r\n}\r\n\r\n.modal.active .image-placeholder {\r\n  width: 100%;\r\n  display: flex;\r\n  justify-content: center;\r\n}\r\n\r\n.modal.active .image-placeholder img {\r\n  height: 55vh;\r\n}\r\n\r\n.modal.active .modal-inner {\r\n  padding: 1rem;\r\n\r\n  /* height: 30vh;\r\n  overflow-y: scroll; */\r\n}\r\n\r\n.modal.active .modal-inner .comment-form {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 0.75rem;\r\n}\r\n\r\n/*\r\n    ============================================\r\n    ******* MEDIA QUERY *******\r\n    ============================================\r\n*/\r\n\r\n@media screen and (max-width: 600px) {\r\n  .d-navbar {\r\n    display: none;\r\n  }\r\n}\r\n\r\n@media screen and (min-width: 600px) {\r\n  .humberger {\r\n    display: none;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 48rem) {\r\n  .items-container {\r\n    grid-template-columns: 1fr 1fr;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 64rem) {\r\n  .items-container {\r\n    grid-template-columns: 1fr 1fr 1fr;\r\n  }\r\n}\r\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
-/***/ "./src/comments.js":
-/*!*************************!*\
-  !*** ./src/comments.js ***!
-  \*************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _counter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./counter */ \"./src/counter.js\");\n/* harmony import */ var _involvment_api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./involvment-api */ \"./src/involvment-api.js\");\n\r\n\r\n\r\nconst displayComments = (ul, userComment) => {\r\n  const comment = document.createElement('li');\r\n  comment.className = 'comment-li';\r\n  const commentMeta = document.createElement('div');\r\n  commentMeta.className = 'comment-meta';\r\n  comment.appendChild(commentMeta);\r\n  const name = document.createElement('p');\r\n  name.style.textTransform = 'Capitalize';\r\n  name.innerText = userComment.username;\r\n\r\n  const date = document.createElement('p');\r\n  date.className = 'no-comments';\r\n  date.innerText = userComment.creation_date;\r\n  commentMeta.appendChild(name);\r\n  commentMeta.appendChild(date);\r\n  const message = document.createElement('p');\r\n  message.innerText = userComment.comment;\r\n  message.style.textTransform = 'Capitalize';\r\n  comment.appendChild(message);\r\n  ul.appendChild(comment);\r\n};\r\n\r\nconst commentModal = (itemID) => {\r\n  let commentCounter = 0;\r\n  const modalInner = document.createElement('div');\r\n  modalInner.className = 'modal-inner';\r\n  // const modalHeader = document.createElement('div');\r\n  // modalHeader.className = 'modal-header';\r\n  // modalInner.appendChild(modalHeader);\r\n  // const closeBtn = document.createElement('button');\r\n  // closeBtn.className = 'close-modal icn-btn';\r\n  // closeBtn.innerHTML = '&times;';\r\n  // closeBtn.addEventListener('click', () => {\r\n  //   modal.style.display = 'none';\r\n  // });\r\n  // modalHeader.appendChild(closeBtn);\r\n  const modalDetails = document.createElement('div');\r\n  modalDetails.className = 'modal-details';\r\n  modalInner.appendChild(modalDetails);\r\n  // const modalImg = document.createElement('img');\r\n  // modalImg.className = 'modal-img';\r\n  // modalImg.src = meal.strMealThumb;\r\n  // modalDetails.appendChild(modalImg);\r\n  const modalMeta = document.createElement('div');\r\n  modalMeta.className = 'modal-meta';\r\n  modalDetails.appendChild(modalMeta);\r\n  // const modalTitle = document.createElement('h4');\r\n  // modalTitle.className = 'modal-title';\r\n  // modalTitle.innerText = meal.strMeal;\r\n  // modalMeta.appendChild(modalTitle);\r\n  // const modalDesc = document.createElement('p');\r\n  // modalDesc.className = 'modal-desc';\r\n  // modalDesc.innerText = meal.strInstructions;\r\n  // modalMeta.appendChild(modalDesc);\r\n\r\n  const allComments = document.createElement('div');\r\n  allComments.className = 'all-comments';\r\n  modalMeta.appendChild(allComments);\r\n  const allCommentsTitle = document.createElement('h1');\r\n  allCommentsTitle.className = 'all-comments-title';\r\n  allCommentsTitle.innerText = 'All Comments';\r\n  allComments.appendChild(allCommentsTitle);\r\n  const commentUl = document.createElement('ul');\r\n  commentUl.className = 'comment-ul';\r\n  _involvment_api__WEBPACK_IMPORTED_MODULE_1__.getComments(itemID).then((data) => {\r\n    if (data === 'No comments available for this item') {\r\n      commentUl.innerHTML = `<li class=\"no-comments\">${`${data}. Add a new comment`}</li>`;\r\n    } else {\r\n      console.log('data passed to counter.comments', data);\r\n      commentCounter = _counter__WEBPACK_IMPORTED_MODULE_0__[\"default\"].comments(data);\r\n      allCommentsTitle.innerText = `All Comments(${commentCounter})`;\r\n      data.forEach((userComment) => {\r\n        displayComments(commentUl, userComment);\r\n      });\r\n    }\r\n  });\r\n  allComments.appendChild(commentUl);\r\n  const form = document.createElement('form');\r\n  form.className = 'comment-form';\r\n  modalMeta.appendChild(form);\r\n  const formTitle = document.createElement('h1');\r\n  formTitle.className = 'comment-form-title';\r\n  formTitle.innerText = 'Add a comment';\r\n  form.appendChild(formTitle);\r\n  const commenterName = document.createElement('input');\r\n  commenterName.type = 'text';\r\n  commenterName.name = 'commenter';\r\n  commenterName.placeholder = 'Your Name';\r\n  commenterName.attributes.required = true;\r\n  form.appendChild(commenterName);\r\n  const commenterMessage = document.createElement('textarea');\r\n  commenterMessage.rows = 5;\r\n  commenterMessage.className = 'comment-message';\r\n  commenterMessage.placeholder = 'Your Message';\r\n  form.appendChild(commenterMessage);\r\n  const formButton = document.createElement('button');\r\n  formButton.className = 'btn btn-alt';\r\n  formButton.innerHTML = 'Add Comment';\r\n  form.appendChild(formButton);\r\n  formButton.onclick = (e) => {\r\n    e.preventDefault();\r\n    _involvment_api__WEBPACK_IMPORTED_MODULE_1__.postComment(\r\n      itemID,\r\n      commenterName.value,\r\n      commenterMessage.value,\r\n    ).then(() => {\r\n      if (commentUl.hasChildNodes()) {\r\n        commentUl.innerHTML = '';\r\n        _involvment_api__WEBPACK_IMPORTED_MODULE_1__.getComments(itemID).then((data) => {\r\n          if (data === 'No comments available for this item') {\r\n            commentUl.innerHTML = `<li class=\"no-comments\">${`${data}. Add a new comment`}</li>`;\r\n          } else {\r\n            allCommentsTitle.innerText = `All Comments(${commentCounter + 1})`;\r\n            data.forEach((userComment) => {\r\n              displayComments(commentUl, userComment);\r\n            });\r\n          }\r\n        });\r\n      }\r\n    });\r\n    commenterName.value = '';\r\n    commenterMessage.value = '';\r\n  };\r\n  console.log('modalInner in function commentModal-comments.js', modalInner);\r\n  return modalInner;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (commentModal);\r\n\n\n//# sourceURL=webpack://JS-Capstone/./src/comments.js?");
-
-/***/ }),
-
-/***/ "./src/counter.js":
-/*!************************!*\
-  !*** ./src/counter.js ***!
-  \************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst counter = {\r\n  comments: (allComments) => allComments.length,\r\n};\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (counter);\r\n\n\n//# sourceURL=webpack://JS-Capstone/./src/counter.js?");
 
 /***/ }),
+/* 9 */
+/***/ ((module) => {
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _cc_api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./cc-api */ \"./src/cc-api.js\");\n/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils */ \"./src/utils.js\");\n/* harmony import */ var _involvment_api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./involvment-api */ \"./src/involvment-api.js\");\n/* harmony import */ var _comments__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./comments */ \"./src/comments.js\");\n/* eslint-disable no-use-before-define */\r\n\r\n\r\n\r\n\r\n\r\n\r\nconst ulContainer = document.querySelector('[data-list-container]');\r\nconst overlay = document.getElementsByClassName('overlay')[0];\r\n\r\nconst listenAddLikeBtns = (pageNum, buttons) => {\r\n  buttons.forEach((btn) => {\r\n    btn.addEventListener('click', async () => {\r\n      await _involvment_api__WEBPACK_IMPORTED_MODULE_3__.postLike(btn.dataset.addLike);\r\n      renderPage(pageNum);\r\n    });\r\n  });\r\n};\r\n\r\nconst listenOpenModalBtns = (buttons) => {\r\n  buttons.forEach((btn) => {\r\n    btn.addEventListener('click', async (e) => {\r\n      const { id } = e.target.parentElement;\r\n      const itemDetails = await _cc_api__WEBPACK_IMPORTED_MODULE_1__.getDetailsForItem(id);\r\n      const {\r\n        title, url, creator, license, source, sourcePageUrl,\r\n      } = itemDetails;\r\n      overlay.classList.add('active');\r\n      const modal = document.createElement('div');\r\n      modal.classList.add('modal');\r\n      modal.classList.add('active');\r\n      modal.innerHTML = `\r\n      <p data-close-modal class=\"btn close_modal\"> Close </p>\r\n      <a href=\"${url}\" target=\"_blank\" class=\"image-placeholder\">\r\n          <img src=\"${url}\" alt=\"${title}\">\r\n      </a>\r\n      <p>${title}</p>\r\n      <div class=\"item-details\">\r\n        <p>Creator: ${(creator !== null) ? creator : 'Unknown'}</p>\r\n        <p>License: ${license}</p>      \r\n        <p>Source: ${source}</p>\r\n        <p><a href=\"${sourcePageUrl}\"> Visit Source</a></p>\r\n      </div>   \r\n      `;\r\n      document.querySelector('body').appendChild(modal);\r\n      modal.appendChild((0,_comments__WEBPACK_IMPORTED_MODULE_4__[\"default\"])(id));\r\n      listenCloseModalBtn(modal);\r\n    });\r\n  });\r\n};\r\n\r\nconst listenCloseModalBtn = (childToBeRemoved) => {\r\n  document.querySelector('[data-close-modal]').addEventListener('click', () => {\r\n    document.querySelector('body').removeChild(childToBeRemoved);\r\n    overlay.classList.remove('active');\r\n  });\r\n};\r\n\r\nconst renderPage = async (pageNum) => {\r\n  const processedData = await _cc_api__WEBPACK_IMPORTED_MODULE_1__.processPageResult(pageNum);\r\n  const likes = await _involvment_api__WEBPACK_IMPORTED_MODULE_3__.getLikes();\r\n  (0,_utils__WEBPACK_IMPORTED_MODULE_2__.generateListHtml)(processedData, ulContainer, JSON.parse(likes));\r\n  listenAddLikeBtns(pageNum, document.querySelectorAll('[data-add-like]'));\r\n  listenOpenModalBtns(document.querySelectorAll('[data-open-modal]'));\r\n};\r\n\r\nrenderPage(5);\r\n\n\n//# sourceURL=webpack://JS-Capstone/./src/index.js?");
 
-/***/ }),
-
-/***/ "./src/involvment-api.js":
-/*!*******************************!*\
-  !*** ./src/involvment-api.js ***!
-  \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"getLikes\": () => (/* binding */ getLikes),\n/* harmony export */   \"postLike\": () => (/* binding */ postLike),\n/* harmony export */   \"getComments\": () => (/* binding */ getComments),\n/* harmony export */   \"postComment\": () => (/* binding */ postComment)\n/* harmony export */ });\n/* eslint-disable import/prefer-default-export */\r\nconst involvmentBaseUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/';\r\nconst appKey = 'A15Lv9pSHXff9hlMtBe4';\r\nconst header = new Headers({ 'Content-type': 'application/json; charset=UTF-8' });\r\n\r\nconst getLikes = async () => {\r\n  const likesResult = await fetch(`${involvmentBaseUrl}apps/${appKey}/likes/`, { method: 'GET' });\r\n  const likes = await likesResult.text();\r\n  return likes;\r\n};\r\n\r\nconst postLike = async (itemId) => {\r\n  await fetch(`${involvmentBaseUrl}apps/${appKey}/likes/`, {\r\n    method: 'POST',\r\n    headers: header,\r\n    body: JSON.stringify({\r\n      item_id: `${itemId}`,\r\n    }),\r\n  });\r\n};\r\n\r\nconst getComments = async (itemID) => {\r\n  const res = await fetch(\r\n    `${involvmentBaseUrl}apps/${appKey}/comments?item_id=${itemID}`,\r\n    { method: 'GET' },\r\n  );\r\n  if (!res.ok) {\r\n    return 'No comments available for this item';\r\n  }\r\n  const data = await res.json();\r\n  console.log('involvment.getComments returned data', data);\r\n  return data;\r\n};\r\n\r\nconst postComment = async (itemId, username, comment) => {\r\n  const res = await fetch(\r\n    `${involvmentBaseUrl}apps/${appKey}/comments/`,\r\n    {\r\n      method: 'POST',\r\n      body: JSON.stringify({\r\n        item_id: itemId,\r\n        username,\r\n        comment,\r\n      }),\r\n      headers: header,\r\n    },\r\n  );\r\n  if (!res.ok) {\r\n    throw new Error(`API error! status: ${res.status}`);\r\n  } else {\r\n    const data = await res.text();\r\n    return data;\r\n  }\r\n};\r\n\n\n//# sourceURL=webpack://JS-Capstone/./src/involvment-api.js?");
+module.exports = function (i) {
+  return i[1];
+};
 
 /***/ }),
+/* 10 */
+/***/ ((module) => {
 
-/***/ "./src/utils.js":
-/*!**********************!*\
-  !*** ./src/utils.js ***!
-  \**********************/
+
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+*/
+module.exports = function (cssWithMappingToString) {
+  var list = []; // return the list of modules as css string
+
+  list.toString = function toString() {
+    return this.map(function (item) {
+      var content = "";
+      var needLayer = typeof item[5] !== "undefined";
+
+      if (item[4]) {
+        content += "@supports (".concat(item[4], ") {");
+      }
+
+      if (item[2]) {
+        content += "@media ".concat(item[2], " {");
+      }
+
+      if (needLayer) {
+        content += "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {");
+      }
+
+      content += cssWithMappingToString(item);
+
+      if (needLayer) {
+        content += "}";
+      }
+
+      if (item[2]) {
+        content += "}";
+      }
+
+      if (item[4]) {
+        content += "}";
+      }
+
+      return content;
+    }).join("");
+  }; // import a list of modules into the list
+
+
+  list.i = function i(modules, media, dedupe, supports, layer) {
+    if (typeof modules === "string") {
+      modules = [[null, modules, undefined]];
+    }
+
+    var alreadyImportedModules = {};
+
+    if (dedupe) {
+      for (var _i = 0; _i < this.length; _i++) {
+        var id = this[_i][0];
+
+        if (id != null) {
+          alreadyImportedModules[id] = true;
+        }
+      }
+    }
+
+    for (var _i2 = 0; _i2 < modules.length; _i2++) {
+      var item = [].concat(modules[_i2]);
+
+      if (dedupe && alreadyImportedModules[item[0]]) {
+        continue;
+      }
+
+      if (typeof layer !== "undefined") {
+        if (typeof item[5] === "undefined") {
+          item[5] = layer;
+        } else {
+          item[1] = "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {").concat(item[1], "}");
+          item[5] = layer;
+        }
+      }
+
+      if (media) {
+        if (!item[2]) {
+          item[2] = media;
+        } else {
+          item[1] = "@media ".concat(item[2], " {").concat(item[1], "}");
+          item[2] = media;
+        }
+      }
+
+      if (supports) {
+        if (!item[4]) {
+          item[4] = "".concat(supports);
+        } else {
+          item[1] = "@supports (".concat(item[4], ") {").concat(item[1], "}");
+          item[4] = supports;
+        }
+      }
+
+      list.push(item);
+    }
+  };
+
+  return list;
+};
+
+/***/ }),
+/* 11 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"generateListHtml\": () => (/* binding */ generateListHtml)\n/* harmony export */ });\n/* eslint-disable import/prefer-default-export */\nconst readLikesNum = (likesArray, id) => {\n  const likedItem = likesArray.find((likeItem) => likeItem.item_id === id);\n  if (!likedItem) {\n    return 0;\n  }\n  return likedItem.likes;\n};\n\nconst generateListHtml = (list, ulContainer, likesArray) => {\n  let ulInner = '';\n  list.forEach((item) => {\n    const { id, thumbnailUrl, title } = item;\n    const likesNum = readLikesNum(likesArray, id);\n    ulInner += `\n    <li id=\"${id}\" class=\"item-card\">\n      <div data-open-modal class=\"card-top\">\n        <div class=\"thumbnail-placeholder\">\n          <img src=\"${thumbnailUrl}\" alt=\"thumbnail of ${title}\">\n        </div>\n        <p>${title.substring(0, 20)}...</p>\n      </div>\n      <div class=\"likes\">\n        <p data-add-like='${id}' class=\"btn\">Click to Like</p>\n        <p>${likesNum} likes</p>\n      </div>\n      <p data-open-modal class=\"btn\">Comments</p>\n    </li>`;\n  });\n  ulContainer.innerHTML = ulInner;\n};\n\n\n//# sourceURL=webpack://JS-Capstone/./src/utils.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "processPageResult": () => (/* binding */ processPageResult),
+/* harmony export */   "getDetailsForItem": () => (/* binding */ getDetailsForItem)
+/* harmony export */ });
+/* eslint-disable import/prefer-default-export */
+const ccBaseUrl = 'https://api.creativecommons.engineering/v1/images';
+const header = new Headers({ 'Content-type': 'application/json; charset=UTF-8' });
+
+const fetchPage = async (pageNum) => {
+  const result = await fetch(`${ccBaseUrl}?categories=photograph&page=${pageNum}`, {
+    method: 'GET',
+    headers: header,
+    mode: 'cors',
+  });
+  return result.json();
+};
+
+const fetchItemDetails = async (id) => {
+  const result = await fetch(`${ccBaseUrl}/${id}`);
+  return result.json();
+};
+
+const getPageData = async (pageNum) => {
+  const dataFromApi = await fetchPage(pageNum);
+  return dataFromApi.results;
+};
+
+const processPageResult = async (pageNum) => {
+  const returnedDataForPage = await getPageData(pageNum);
+  return [...returnedDataForPage]
+    .map((item) => ({ id: item.id, thumbnailUrl: item.thumbnail, title: item.title }));
+};
+
+const getDetailsForItem = async (id) => {
+  const itemDetails = await fetchItemDetails(id);
+  return ({
+    title: itemDetails.title,
+    url: itemDetails.url,
+    creator: itemDetails.creator,
+    license: itemDetails.license,
+    source: itemDetails.source,
+    sourcePageUrl: itemDetails.foreign_landing_url,
+  });
+};
+
+
+/***/ }),
+/* 12 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "generateListHtml": () => (/* binding */ generateListHtml)
+/* harmony export */ });
+/* eslint-disable import/prefer-default-export */
+const readLikesNum = (likesArray, id) => {
+  const likedItem = likesArray.find((likeItem) => likeItem.item_id === id);
+  if (!likedItem) {
+    return 0;
+  }
+  return likedItem.likes;
+};
+
+const generateListHtml = (list, ulContainer, likesArray) => {
+  let ulInner = '';
+  list.forEach((item) => {
+    const { id, thumbnailUrl, title } = item;
+    const likesNum = readLikesNum(likesArray, id);
+    ulInner += `
+    <li id="${id}" class="item-card">
+      <div data-open-modal class="card-top">
+        <div class="thumbnail-placeholder">
+          <img src="${thumbnailUrl}" alt="thumbnail of ${title}">
+        </div>
+        <p>${title.substring(0, 20)}...</p>
+      </div>
+      <div class="likes">
+        <p data-add-like='${id}' class="btn">Click to Like</p>
+        <p>${likesNum} likes</p>
+      </div>
+      <p data-open-modal class="btn">Comments</p>
+    </li>`;
+  });
+  ulContainer.innerHTML = ulInner;
+};
+
+
+/***/ }),
+/* 13 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getLikes": () => (/* binding */ getLikes),
+/* harmony export */   "postLike": () => (/* binding */ postLike),
+/* harmony export */   "getComments": () => (/* binding */ getComments),
+/* harmony export */   "postComment": () => (/* binding */ postComment)
+/* harmony export */ });
+/* eslint-disable import/prefer-default-export */
+const involvmentBaseUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/';
+const appKey = 'A15Lv9pSHXff9hlMtBe4';
+const header = new Headers({ 'Content-type': 'application/json; charset=UTF-8' });
+
+const getLikes = async () => {
+  const likesResult = await fetch(`${involvmentBaseUrl}apps/${appKey}/likes/`, { method: 'GET' });
+  const likes = await likesResult.text();
+  return likes;
+};
+
+const postLike = async (itemId) => {
+  await fetch(`${involvmentBaseUrl}apps/${appKey}/likes/`, {
+    method: 'POST',
+    headers: header,
+    body: JSON.stringify({
+      item_id: `${itemId}`,
+    }),
+  });
+};
+
+const getComments = async (itemID) => {
+  const res = await fetch(
+    `${involvmentBaseUrl}apps/${appKey}/comments?item_id=${itemID}`,
+    { method: 'GET' },
+  );
+  if (!res.ok) {
+    return 'No comments available for this item';
+  }
+  const data = await res.json();
+  console.log('involvment.getComments returned data', data);
+  return data;
+};
+
+const postComment = async (itemId, username, comment) => {
+  const res = await fetch(
+    `${involvmentBaseUrl}apps/${appKey}/comments/`,
+    {
+      method: 'POST',
+      body: JSON.stringify({
+        item_id: itemId,
+        username,
+        comment,
+      }),
+      headers: header,
+    },
+  );
+  if (!res.ok) {
+    throw new Error(`API error! status: ${res.status}`);
+  } else {
+    const data = await res.text();
+    return data;
+  }
+};
+
+
+/***/ }),
+/* 14 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _counter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
+/* harmony import */ var _involvment_api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13);
+
+
+
+const displayComments = (ul, userComment) => {
+  const comment = document.createElement('li');
+  comment.className = 'comment-li';
+  const commentMeta = document.createElement('div');
+  commentMeta.className = 'comment-meta';
+  comment.appendChild(commentMeta);
+  const name = document.createElement('p');
+  name.style.textTransform = 'Capitalize';
+  name.innerText = userComment.username;
+
+  const date = document.createElement('p');
+  date.className = 'no-comments';
+  date.innerText = userComment.creation_date;
+  commentMeta.appendChild(name);
+  commentMeta.appendChild(date);
+  const message = document.createElement('p');
+  message.innerText = userComment.comment;
+  message.style.textTransform = 'Capitalize';
+  comment.appendChild(message);
+  ul.appendChild(comment);
+};
+
+const commentModal = (itemID) => {
+  let commentCounter = 0;
+  const modalInner = document.createElement('div');
+  modalInner.className = 'modal-inner';
+  // const modalHeader = document.createElement('div');
+  // modalHeader.className = 'modal-header';
+  // modalInner.appendChild(modalHeader);
+  // const closeBtn = document.createElement('button');
+  // closeBtn.className = 'close-modal icn-btn';
+  // closeBtn.innerHTML = '&times;';
+  // closeBtn.addEventListener('click', () => {
+  //   modal.style.display = 'none';
+  // });
+  // modalHeader.appendChild(closeBtn);
+  const modalDetails = document.createElement('div');
+  modalDetails.className = 'modal-details';
+  modalInner.appendChild(modalDetails);
+  // const modalImg = document.createElement('img');
+  // modalImg.className = 'modal-img';
+  // modalImg.src = meal.strMealThumb;
+  // modalDetails.appendChild(modalImg);
+  const modalMeta = document.createElement('div');
+  modalMeta.className = 'modal-meta';
+  modalDetails.appendChild(modalMeta);
+  // const modalTitle = document.createElement('h4');
+  // modalTitle.className = 'modal-title';
+  // modalTitle.innerText = meal.strMeal;
+  // modalMeta.appendChild(modalTitle);
+  // const modalDesc = document.createElement('p');
+  // modalDesc.className = 'modal-desc';
+  // modalDesc.innerText = meal.strInstructions;
+  // modalMeta.appendChild(modalDesc);
+
+  const allComments = document.createElement('div');
+  allComments.className = 'all-comments';
+  modalMeta.appendChild(allComments);
+  const allCommentsTitle = document.createElement('h1');
+  allCommentsTitle.className = 'all-comments-title';
+  allCommentsTitle.innerText = 'All Comments';
+  allComments.appendChild(allCommentsTitle);
+  const commentUl = document.createElement('ul');
+  commentUl.className = 'comment-ul';
+  _involvment_api__WEBPACK_IMPORTED_MODULE_1__.getComments(itemID).then((data) => {
+    if (data === 'No comments available for this item') {
+      commentUl.innerHTML = `<li class="no-comments">${`${data}. Add a new comment`}</li>`;
+    } else {
+      console.log('data passed to counter.comments', data);
+      commentCounter = _counter__WEBPACK_IMPORTED_MODULE_0__["default"].comments(data);
+      allCommentsTitle.innerText = `All Comments(${commentCounter})`;
+      data.forEach((userComment) => {
+        displayComments(commentUl, userComment);
+      });
+    }
+  });
+  allComments.appendChild(commentUl);
+  const form = document.createElement('form');
+  form.className = 'comment-form';
+  modalMeta.appendChild(form);
+  const formTitle = document.createElement('h1');
+  formTitle.className = 'comment-form-title';
+  formTitle.innerText = 'Add a comment';
+  form.appendChild(formTitle);
+  const commenterName = document.createElement('input');
+  commenterName.type = 'text';
+  commenterName.name = 'commenter';
+  commenterName.placeholder = 'Your Name';
+  commenterName.attributes.required = true;
+  form.appendChild(commenterName);
+  const commenterMessage = document.createElement('textarea');
+  commenterMessage.rows = 5;
+  commenterMessage.className = 'comment-message';
+  commenterMessage.placeholder = 'Your Message';
+  form.appendChild(commenterMessage);
+  const formButton = document.createElement('button');
+  formButton.className = 'btn btn-alt';
+  formButton.innerHTML = 'Add Comment';
+  form.appendChild(formButton);
+  formButton.onclick = (e) => {
+    e.preventDefault();
+    _involvment_api__WEBPACK_IMPORTED_MODULE_1__.postComment(
+      itemID,
+      commenterName.value,
+      commenterMessage.value,
+    ).then(() => {
+      if (commentUl.hasChildNodes()) {
+        commentUl.innerHTML = '';
+        _involvment_api__WEBPACK_IMPORTED_MODULE_1__.getComments(itemID).then((data) => {
+          if (data === 'No comments available for this item') {
+            commentUl.innerHTML = `<li class="no-comments">${`${data}. Add a new comment`}</li>`;
+          } else {
+            allCommentsTitle.innerText = `All Comments(${commentCounter + 1})`;
+            data.forEach((userComment) => {
+              displayComments(commentUl, userComment);
+            });
+          }
+        });
+      }
+    });
+    commenterName.value = '';
+    commenterMessage.value = '';
+  };
+  console.log('modalInner in function commentModal-comments.js', modalInner);
+  return modalInner;
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (commentModal);
+
+
+/***/ }),
+/* 15 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const counter = {
+  comments: (allComments) => allComments.length,
+  loadedItems: (numLoaded) => numLoaded.length,
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (counter);
+
 
 /***/ })
-
-/******/ 	});
+/******/ 	]);
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
@@ -228,11 +859,89 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	})();
 /******/ 	
 /************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
-/******/ 	
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+(() => {
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _cc_api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
+/* harmony import */ var _involvment_api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(13);
+/* harmony import */ var _comments__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(14);
+/* harmony import */ var _counter__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(15);
+/* eslint-disable no-use-before-define */
+
+
+
+
+
+
+
+const ulContainer = document.querySelector('[data-list-container]');
+const overlay = document.getElementsByClassName('overlay')[0];
+
+const listenAddLikeBtns = (pageNum, buttons) => {
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      await _involvment_api__WEBPACK_IMPORTED_MODULE_3__.postLike(btn.dataset.addLike);
+      renderPage(pageNum);
+    });
+  });
+};
+
+const listenOpenModalBtns = (buttons) => {
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', async (e) => {
+      const { id } = e.target.parentElement;
+      const itemDetails = await _cc_api__WEBPACK_IMPORTED_MODULE_1__.getDetailsForItem(id);
+      const {
+        title, url, creator, license, source, sourcePageUrl,
+      } = itemDetails;
+      overlay.classList.add('active');
+      const modal = document.createElement('div');
+      modal.classList.add('modal');
+      modal.classList.add('active');
+      modal.innerHTML = `
+      <p data-close-modal class="btn close_modal"> Close </p>
+      <a href="${url}" target="_blank" class="image-placeholder">
+          <img src="${url}" alt="${title}">
+      </a>
+      <p>${title}</p>
+      <div class="item-details">
+        <p>Creator: ${(creator !== null) ? creator : 'Unknown'}</p>
+        <p>License: ${license}</p>      
+        <p>Source: ${source}</p>
+        <p><a href="${sourcePageUrl}"> Visit Source</a></p>
+      </div>   
+      `;
+      document.querySelector('body').appendChild(modal);
+      modal.appendChild((0,_comments__WEBPACK_IMPORTED_MODULE_4__["default"])(id));
+      listenCloseModalBtn(modal);
+    });
+  });
+};
+
+const listenCloseModalBtn = (childToBeRemoved) => {
+  document.querySelector('[data-close-modal]').addEventListener('click', () => {
+    document.querySelector('body').removeChild(childToBeRemoved);
+    overlay.classList.remove('active');
+  });
+};
+
+const renderPage = async (pageNum) => {
+  const processedData = await _cc_api__WEBPACK_IMPORTED_MODULE_1__.processPageResult(pageNum);
+  const likes = await _involvment_api__WEBPACK_IMPORTED_MODULE_3__.getLikes();
+  const numOfItems = _counter__WEBPACK_IMPORTED_MODULE_5__["default"].loadedItems(processedData);
+  const listHeader = document.querySelector('[data-loaded-items]');
+  listHeader.textContent = `Category: Photographs.    Items loaded: ${numOfItems}`;
+  (0,_utils__WEBPACK_IMPORTED_MODULE_2__.generateListHtml)(processedData, ulContainer, JSON.parse(likes));
+  listenAddLikeBtns(pageNum, document.querySelectorAll('[data-add-like]'));
+  listenOpenModalBtns(document.querySelectorAll('[data-open-modal]'));
+};
+
+renderPage(37);
+
+})();
+
 /******/ })()
 ;
