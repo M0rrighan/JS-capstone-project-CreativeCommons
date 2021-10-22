@@ -4,6 +4,7 @@ import * as CCApi from './cc-api';
 import { generateListHtml } from './utils';
 import * as Involvment from './involvment-api';
 import commentModal from './comments';
+import counter from './counter';
 
 const ulContainer = document.querySelector('[data-list-container]');
 const overlay = document.getElementsByClassName('overlay')[0];
@@ -59,9 +60,12 @@ const listenCloseModalBtn = (childToBeRemoved) => {
 const renderPage = async (pageNum) => {
   const processedData = await CCApi.processPageResult(pageNum);
   const likes = await Involvment.getLikes();
+  const numOfItems = counter.loadedItems(processedData);
+  const listHeader = document.querySelector('[data-loaded-items]');
+  listHeader.textContent = `Category: Photographs.    Items loaded: ${numOfItems}`;
   generateListHtml(processedData, ulContainer, JSON.parse(likes));
   listenAddLikeBtns(pageNum, document.querySelectorAll('[data-add-like]'));
   listenOpenModalBtns(document.querySelectorAll('[data-open-modal]'));
 };
 
-renderPage(5);
+renderPage(37);
