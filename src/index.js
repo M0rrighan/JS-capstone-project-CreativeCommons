@@ -3,6 +3,7 @@ import './style.css';
 import * as CCApi from './cc-api';
 import { generateListHtml } from './utils';
 import * as Involvment from './involvment-api';
+import commentModal from './comments';
 
 const ulContainer = document.querySelector('[data-list-container]');
 const overlay = document.getElementsByClassName('overlay')[0];
@@ -39,11 +40,10 @@ const listenOpenModalBtns = (buttons) => {
         <p>License: ${license}</p>      
         <p>Source: ${source}</p>
         <p><a href="${sourcePageUrl}"> Visit Source</a></p>
-      </div>
-      <div class="popup-comments"> Comments Here
-      </div>     
+      </div>   
       `;
       document.querySelector('body').appendChild(modal);
+      modal.appendChild(commentModal(id));
       listenCloseModalBtn(modal);
     });
   });
@@ -64,4 +64,4 @@ const renderPage = async (pageNum) => {
   listenOpenModalBtns(document.querySelectorAll('[data-open-modal]'));
 };
 
-renderPage(17);
+renderPage(5);

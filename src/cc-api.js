@@ -1,8 +1,13 @@
 /* eslint-disable import/prefer-default-export */
 const ccBaseUrl = 'https://api.creativecommons.engineering/v1/images';
+const header = new Headers({ 'Content-type': 'application/json; charset=UTF-8' });
 
 const fetchPage = async (pageNum) => {
-  const result = await fetch(`${ccBaseUrl}?categories=photograph&page=${pageNum}`);
+  const result = await fetch(`${ccBaseUrl}?categories=photograph&page=${pageNum}`, {
+    method: 'GET',
+    headers: header,
+    mode: 'cors',
+  });
   return result.json();
 };
 
