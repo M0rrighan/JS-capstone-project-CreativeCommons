@@ -208,6 +208,7 @@ footer {
   top: 2.75rem;
   left: 1rem;
   right: 1rem;
+  bottom: 1rem;
   border-radius: 1rem;
   z-index: 10;
   background-color: #fff;
@@ -226,6 +227,12 @@ footer {
   padding: 1rem;
 }
 
+.close_modal {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
 .modal.active .image-placeholder {
   width: 100%;
   display: flex;
@@ -236,15 +243,17 @@ footer {
   height: 55vh;
 }
 
-.modal.active .popup-comments {
+.modal.active .modal-inner {
   padding: 1rem;
-  height: 30vh;
+
+  /* height: 30vh;
+  overflow-y: scroll; */
 }
 
-.close_modal {
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
+.modal.active .modal-inner .comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 /*
