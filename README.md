@@ -11,9 +11,10 @@
 - Webpack
 
 ## Live demo
-[LiveLink](https://github.com/M0rrighan/JS-capstone-project-CreativeCommons/dist/)
+[LiveLink](https://m0rrighan.github.io/JS-capstone-project-CreativeCommons/)
 
-
+## Presentation video
+https://files.fm/u/efqxbe7mg
 ## Getting Started
 To get a local copy of this project, follow these simple steps:
 - Clone this clone this repo by typing: `git clone https://github.com/M0rrighan/JS-capstone-project-CreativeCommons`.git`, on your local terminal
