@@ -118,13 +118,24 @@ section {
   padding: 0 1rem;
 }
 
+.comment-form input,
+.comment-form textarea,
+.comment-form input::placeholder,
+.comment-form textarea::placeholder,
+.comment-form .btn-alt {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
 section .page-options form {
   float: right;
   text-align: right;
   padding: 0.5rem;
   border-radius: 0.25rem;
   margin-bottom: 1rem;
-  box-shadow: inset 0rem 0rem 0.5rem 0.25rem hsl(270deg 16% 22%);
+  box-shadow: inset 0 0 0.5rem 0.25rem hsl(270deg 16% 22%);
 }
 
 section .page-options form input {
@@ -308,17 +319,6 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.75rem;
-}
-
-.comment-form input,
-.comment-form textarea,
-.comment-form input::placeholder,
-.comment-form textarea::placeholder,
-.comment-form .btn-alt {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  border-radius: 0.25rem;
 }
 
 .comment-form .btn-alt:hover {
