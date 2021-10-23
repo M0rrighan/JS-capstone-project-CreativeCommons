@@ -118,6 +118,31 @@ section {
   padding: 0 1rem;
 }
 
+section .page-options form {
+  float: right;
+  text-align: right;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  box-shadow: inset 0rem 0rem 0.5rem 0.25rem hsl(270deg 16% 22%);
+}
+
+section .page-options form input {
+  outline: none;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.options-btn {
+  padding: 0.25em;
+  background-color: hsl(0, 0%, 90%);
+  box-shadow: 0.25rem 0.25rem 0.5rem hsl(270deg 16% 22%);
+}
+
+.options-btn:hover {
+  background-color: #fff;
+}
+
 .items-container {
   width: 90%;
   display: grid;

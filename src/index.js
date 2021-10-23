@@ -6,6 +6,11 @@ import * as Involvment from './involvment-api';
 import commentModal from './comments';
 import counter from './counter';
 
+const pageOpts = {
+  pageN: 1,
+  itemsXpage: 20,
+};
+
 const ulContainer = document.querySelector('[data-list-container]');
 const overlay = document.getElementsByClassName('overlay')[0];
 
@@ -13,7 +18,7 @@ const listenAddLikeBtns = (pageNum, buttons) => {
   buttons.forEach((btn) => {
     btn.addEventListener('click', async () => {
       await Involvment.postLike(btn.dataset.addLike);
-      renderPage(pageNum);
+      renderList(pageNum);
     });
   });
 };
@@ -59,12 +64,12 @@ const listenCloseModalBtn = (childToBeRemoved) => {
   });
 };
 
-const renderPage = async (pageNum) => {
-  const processedData = await CCApi.processPageResult(pageNum);
+const renderList = async (pageNum = pageOpts.pageN, itemsPerPage = pageOpts.itemsXpage) => {
+  const processedData = await CCApi.processPageResult(pageNum, itemsPerPage);
   const likes = await Involvment.getLikes();
   const numOfItems = counter.loadedItems(processedData);
   const listHeader = document.querySelector('[data-loaded-items]');
-  listHeader.textContent = `Category: Photographs.    Items loaded: ${numOfItems}`;
+  listHeader.textContent = `Category: ${CCApi.categories.active} Items loaded: ${numOfItems} Page: ${pageNum}.`;
   generateListHtml(processedData, ulContainer, JSON.parse(likes));
   listenAddLikeBtns(pageNum, document.querySelectorAll('[data-add-like]'));
   listenOpenModalBtns(document.querySelectorAll('[data-open-modal]'));
@@ -81,4 +86,53 @@ const renderPage = async (pageNum) => {
   });
 };
 
-renderPage(7);
+const listenCategories = () => {
+  const categories = document.querySelectorAll('.d-navbar li');
+  const cats = document.querySelectorAll('.navbar ul li');
+  console.log('categories', cats[1]);
+  categories.forEach((cat) => {
+    // remove underline to all
+    cat.addEventListener('click', (e) => {
+      cats.forEach((unselected) => {
+        unselected.style.textDecoration = 'none';
+      });
+
+      // underline only targeted
+      e.target.style.textDecoration = 'underline';
+
+      // set active category
+      CCApi.categories.active = e.target.dataset.category;
+      renderList();
+    });
+  });
+};
+
+const listenPageOptions = () => {
+  const form = document.getElementById('options');
+  const itemsXpageField = document.getElementById('items-per-page');
+  const pageNumField = document.getElementById('page-number');
+
+  itemsXpageField.value = pageOpts.itemsXpage;
+  pageNumField.value = pageOpts.pageN;
+  pageNumField.max = parseInt(1000 / pageOpts.itemsXpage, 10);
+
+  itemsXpageField.addEventListener('change', () => {
+    pageOpts.itemsXpage = itemsXpageField.value;
+    pageNumField.max = parseInt(1000 / pageOpts.itemsXpage, 10);
+  });
+
+  pageNumField.addEventListener('change', () => {
+    pageOpts.pageN = pageNumField.value;
+  });
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    renderList();
+    listenCategories();
+    listenPageOptions();
+  });
+};
+
+renderList();
+listenCategories();
+listenPageOptions();

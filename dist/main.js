@@ -351,7 +351,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n  padding: 0;\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n  font-family: 'Courier New', Courier, monospace;\r\n  font-weight: bold;\r\n}\r\n\r\n* a {\r\n  text-decoration: none;\r\n  color: inherit;\r\n}\r\n\r\n* ul li {\r\n  list-style-type: none;\r\n}\r\n\r\n/*\r\n    ===========================\r\n    ******** Global ********\r\n    ===========================\r\n*/\r\nbody {\r\n  padding: 0;\r\n  margin: 0;\r\n  background-color: #e5e5e5;\r\n}\r\n\r\n.btn {\r\n  cursor: pointer;\r\n}\r\n\r\n.overlay {\r\n  position: fixed;\r\n  top: 0;\r\n  bottom: 0;\r\n  left: 0;\r\n  right: 0;\r\n  background-color: hsla(0, 0%, 0%, 0.8);\r\n  opacity: 0;\r\n  z-index: -5;\r\n}\r\n\r\n.overlay.active {\r\n  opacity: 1;\r\n  z-index: 11;\r\n}\r\n\r\n/*\r\n    ===========================\r\n    ******** Layout ********\r\n    ===========================\r\n*/\r\n#header {\r\n  position: fixed;\r\n  z-index: 10;\r\n  width: 100%;\r\n  background-color: #fff;\r\n}\r\n\r\n.logo a {\r\n  text-decoration: none;\r\n}\r\n\r\n.logo img {\r\n  height: 3rem;\r\n}\r\n\r\n.header-container {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: space-between;\r\n  width: 90%;\r\n  align-items: center;\r\n  margin: 0 auto;\r\n}\r\n\r\n.navbar {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  align-items: center;\r\n  height: 100%;\r\n}\r\n\r\n.d-navbar {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  list-style-type: none;\r\n}\r\n\r\n.d-navbar li {\r\n  margin-left: 1rem;\r\n}\r\n\r\n.d-navbar li a {\r\n  color: hsl(0, 0%, 3%);\r\n}\r\n\r\n.a-navbar {\r\n  text-decoration: none;\r\n  height: 2em;\r\n  padding: 0.5em 1em;\r\n}\r\n\r\n.navbar ul {\r\n  gap: 16px;\r\n  padding-top: 12px;\r\n  padding-bottom: 12px;\r\n}\r\n\r\n/* End Header */\r\n\r\nsection {\r\n  overflow-y: auto;\r\n  position: relative;\r\n  padding: 0 1rem;\r\n}\r\n\r\n.items-container {\r\n  width: 90%;\r\n  display: grid;\r\n  grid-template-columns: 1fr;\r\n  justify-items: center;\r\n  gap: 1.5rem;\r\n  margin: 2rem auto;\r\n}\r\n\r\n.item-card {\r\n  min-width: 15rem;\r\n  max-width: 24rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: flex-end;\r\n  gap: 1rem;\r\n  border-radius: 0.5rem;\r\n  box-shadow: 0.25rem 0.25rem 0.5rem hsl(26, 32%, 29%);\r\n}\r\n\r\n.item-card .card-top {\r\n  width: 100%;\r\n  height: 65%;\r\n  position: relative;\r\n  background-color: hsl(0, 0%, 75%);\r\n}\r\n\r\n.item-card .card-top .thumbnail-placeholder {\r\n  width: 100%;\r\n  height: 100%;\r\n  overflow: hidden;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: flex-start;\r\n}\r\n\r\n.item-card .card-top img {\r\n  width: 100%;\r\n}\r\n\r\n.item-card .card-top,\r\n.item-card .card-top .thumbnail-placeholder,\r\n.item-card .card-top img {\r\n  border-top-left-radius: 0.5rem;\r\n  border-top-right-radius: 0.5rem;\r\n}\r\n\r\n.item-card .card-top p {\r\n  position: absolute;\r\n  bottom: 0;\r\n  width: 100%;\r\n  padding: 0.5rem;\r\n  font-size: 1.5rem;\r\n  font-weight: bold;\r\n  color: hsl(39, 14%, 80%);\r\n  background-color: hsla(0, 0%, 13%, 0.7);\r\n}\r\n\r\n.item-card .likes {\r\n  padding: 0.5rem;\r\n  display: flex;\r\n  gap: 0.5rem;\r\n}\r\n\r\n.comment-btn {\r\n  font-size: 2rem;\r\n  margin: 0 auto 0.5rem auto;\r\n  padding: 0.25em;\r\n  border-radius: 0.25em;\r\n  background-color: hsl(0, 0%, 85%);\r\n  box-shadow: 0.25rem 0.25rem 0.5rem hsl(270deg 16% 22%);\r\n}\r\n\r\n.comment-btn:hover {\r\n  background-color: #fff;\r\n}\r\n\r\nfooter {\r\n  width: 100%;\r\n  justify-content: center;\r\n  background-color: white;\r\n  position: fixed;\r\n  bottom: 0;\r\n  margin-top: 2rem;\r\n  border-style: solid;\r\n}\r\n\r\n/*\r\n    ===========================\r\n    ******** PopUp ********\r\n    ===========================\r\n*/\r\n.modal {\r\n  position: fixed;\r\n  top: 2.75rem;\r\n  left: 1rem;\r\n  right: 1rem;\r\n  bottom: 1rem;\r\n  border-radius: 1rem;\r\n  z-index: 15;\r\n  background-color: #fff;\r\n  height: unset;\r\n  overflow-y: auto;\r\n  transform: scale(0);\r\n  transition: 600ms ease-in-out;\r\n}\r\n\r\n.modal.active {\r\n  transform: scale(1);\r\n  transition: 600ms ease-in-out;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  padding: 1rem;\r\n}\r\n\r\n.close_modal {\r\n  position: absolute;\r\n  right: 1rem;\r\n  top: 1rem;\r\n  background-color: #fff;\r\n  padding: 0.25rem;\r\n}\r\n\r\n.modal.active .image-placeholder {\r\n  width: 100%;\r\n  display: flex;\r\n  justify-content: center;\r\n}\r\n\r\n.modal.active .image-placeholder img {\r\n  height: 55vh;\r\n}\r\n\r\n.modal.active .item-details {\r\n  display: grid;\r\n  grid-template-columns: 1fr 1fr;\r\n  gap: 1rem;\r\n  margin: 0.75rem 0;\r\n}\r\n\r\n.modal.active h2 {\r\n  font-weight: 600;\r\n  text-align: center;\r\n}\r\n\r\n.modal.active .modal-inner {\r\n  padding: 1rem;\r\n}\r\n\r\n.modal.active .modal-inner .all-comments {\r\n  margin: 1rem 0;\r\n}\r\n\r\n.modal.active .comment-li,\r\n.modal.active .comment-meta {\r\n  display: flex;\r\n  gap: 0.25rem;\r\n}\r\n\r\n.modal.active .modal-inner .comment-form {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: flex-start;\r\n  gap: 0.75rem;\r\n}\r\n\r\n.comment-form input,\r\n.comment-form textarea,\r\n.comment-form input::placeholder,\r\n.comment-form textarea::placeholder,\r\n.comment-form .btn-alt {\r\n  font-family: 'Courier New', Courier, monospace;\r\n  font-size: 1.5rem;\r\n  padding: 0.5rem;\r\n  border-radius: 0.25rem;\r\n}\r\n\r\n.comment-form .btn-alt:hover {\r\n  background-color: #fff;\r\n}\r\n\r\n/*\r\n    ============================================\r\n    ******* MEDIA QUERY *******\r\n    ============================================\r\n*/\r\n@media only screen and (min-width: 48rem) {\r\n  .items-container {\r\n    grid-template-columns: 1fr 1fr;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 64rem) {\r\n  .items-container {\r\n    grid-template-columns: 1fr 1fr 1fr;\r\n  }\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n  padding: 0;\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n  font-family: 'Courier New', Courier, monospace;\r\n  font-weight: bold;\r\n}\r\n\r\n* a {\r\n  text-decoration: none;\r\n  color: inherit;\r\n}\r\n\r\n* ul li {\r\n  list-style-type: none;\r\n}\r\n\r\n/*\r\n    ===========================\r\n    ******** Global ********\r\n    ===========================\r\n*/\r\nbody {\r\n  padding: 0;\r\n  margin: 0;\r\n  background-color: #e5e5e5;\r\n}\r\n\r\n.btn {\r\n  cursor: pointer;\r\n}\r\n\r\n.overlay {\r\n  position: fixed;\r\n  top: 0;\r\n  bottom: 0;\r\n  left: 0;\r\n  right: 0;\r\n  background-color: hsla(0, 0%, 0%, 0.8);\r\n  opacity: 0;\r\n  z-index: -5;\r\n}\r\n\r\n.overlay.active {\r\n  opacity: 1;\r\n  z-index: 11;\r\n}\r\n\r\n/*\r\n    ===========================\r\n    ******** Layout ********\r\n    ===========================\r\n*/\r\n#header {\r\n  position: fixed;\r\n  z-index: 10;\r\n  width: 100%;\r\n  background-color: #fff;\r\n}\r\n\r\n.logo a {\r\n  text-decoration: none;\r\n}\r\n\r\n.logo img {\r\n  height: 3rem;\r\n}\r\n\r\n.header-container {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: space-between;\r\n  width: 90%;\r\n  align-items: center;\r\n  margin: 0 auto;\r\n}\r\n\r\n.navbar {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  align-items: center;\r\n  height: 100%;\r\n}\r\n\r\n.d-navbar {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  list-style-type: none;\r\n}\r\n\r\n.d-navbar li {\r\n  margin-left: 1rem;\r\n}\r\n\r\n.d-navbar li a {\r\n  color: hsl(0, 0%, 3%);\r\n}\r\n\r\n.a-navbar {\r\n  text-decoration: none;\r\n  height: 2em;\r\n  padding: 0.5em 1em;\r\n}\r\n\r\n.navbar ul {\r\n  gap: 16px;\r\n  padding-top: 12px;\r\n  padding-bottom: 12px;\r\n}\r\n\r\n/* End Header */\r\n\r\nsection {\r\n  overflow-y: auto;\r\n  position: relative;\r\n  padding: 0 1rem;\r\n}\r\n\r\nsection .page-options form {\r\n  float: right;\r\n  text-align: right;\r\n}\r\n\r\n.items-container {\r\n  width: 90%;\r\n  display: grid;\r\n  grid-template-columns: 1fr;\r\n  justify-items: center;\r\n  gap: 1.5rem;\r\n  margin: 2rem auto;\r\n}\r\n\r\n.item-card {\r\n  min-width: 15rem;\r\n  max-width: 24rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: flex-end;\r\n  gap: 1rem;\r\n  border-radius: 0.5rem;\r\n  box-shadow: 0.25rem 0.25rem 0.5rem hsl(26, 32%, 29%);\r\n}\r\n\r\n.item-card .card-top {\r\n  width: 100%;\r\n  height: 65%;\r\n  position: relative;\r\n  background-color: hsl(0, 0%, 75%);\r\n}\r\n\r\n.item-card .card-top .thumbnail-placeholder {\r\n  width: 100%;\r\n  height: 100%;\r\n  overflow: hidden;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: flex-start;\r\n}\r\n\r\n.item-card .card-top img {\r\n  width: 100%;\r\n}\r\n\r\n.item-card .card-top,\r\n.item-card .card-top .thumbnail-placeholder,\r\n.item-card .card-top img {\r\n  border-top-left-radius: 0.5rem;\r\n  border-top-right-radius: 0.5rem;\r\n}\r\n\r\n.item-card .card-top p {\r\n  position: absolute;\r\n  bottom: 0;\r\n  width: 100%;\r\n  padding: 0.5rem;\r\n  font-size: 1.5rem;\r\n  font-weight: bold;\r\n  color: hsl(39, 14%, 80%);\r\n  background-color: hsla(0, 0%, 13%, 0.7);\r\n}\r\n\r\n.item-card .likes {\r\n  padding: 0.5rem;\r\n  display: flex;\r\n  gap: 0.5rem;\r\n}\r\n\r\n.comment-btn {\r\n  font-size: 2rem;\r\n  margin: 0 auto 0.5rem auto;\r\n  padding: 0.25em;\r\n  border-radius: 0.25em;\r\n  background-color: hsl(0, 0%, 85%);\r\n  box-shadow: 0.25rem 0.25rem 0.5rem hsl(270deg 16% 22%);\r\n}\r\n\r\n.comment-btn:hover {\r\n  background-color: #fff;\r\n}\r\n\r\nfooter {\r\n  width: 100%;\r\n  justify-content: center;\r\n  background-color: white;\r\n  position: fixed;\r\n  bottom: 0;\r\n  margin-top: 2rem;\r\n  border-style: solid;\r\n}\r\n\r\n/*\r\n    ===========================\r\n    ******** PopUp ********\r\n    ===========================\r\n*/\r\n.modal {\r\n  position: fixed;\r\n  top: 2.75rem;\r\n  left: 1rem;\r\n  right: 1rem;\r\n  bottom: 1rem;\r\n  border-radius: 1rem;\r\n  z-index: 15;\r\n  background-color: #fff;\r\n  height: unset;\r\n  overflow-y: auto;\r\n  transform: scale(0);\r\n  transition: 600ms ease-in-out;\r\n}\r\n\r\n.modal.active {\r\n  transform: scale(1);\r\n  transition: 600ms ease-in-out;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  padding: 1rem;\r\n}\r\n\r\n.close_modal {\r\n  position: absolute;\r\n  right: 1rem;\r\n  top: 1rem;\r\n  background-color: #fff;\r\n  padding: 0.25rem;\r\n}\r\n\r\n.modal.active .image-placeholder {\r\n  width: 100%;\r\n  display: flex;\r\n  justify-content: center;\r\n}\r\n\r\n.modal.active .image-placeholder img {\r\n  height: 55vh;\r\n}\r\n\r\n.modal.active .item-details {\r\n  display: grid;\r\n  grid-template-columns: 1fr 1fr;\r\n  gap: 1rem;\r\n  margin: 0.75rem 0;\r\n}\r\n\r\n.modal.active h2 {\r\n  font-weight: 600;\r\n  text-align: center;\r\n}\r\n\r\n.modal.active .modal-inner {\r\n  padding: 1rem;\r\n}\r\n\r\n.modal.active .modal-inner .all-comments {\r\n  margin: 1rem 0;\r\n}\r\n\r\n.modal.active .comment-li,\r\n.modal.active .comment-meta {\r\n  display: flex;\r\n  gap: 0.25rem;\r\n}\r\n\r\n.modal.active .modal-inner .comment-form {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: flex-start;\r\n  gap: 0.75rem;\r\n}\r\n\r\n.comment-form input,\r\n.comment-form textarea,\r\n.comment-form input::placeholder,\r\n.comment-form textarea::placeholder,\r\n.comment-form .btn-alt {\r\n  font-family: 'Courier New', Courier, monospace;\r\n  font-size: 1.5rem;\r\n  padding: 0.5rem;\r\n  border-radius: 0.25rem;\r\n}\r\n\r\n.comment-form .btn-alt:hover {\r\n  background-color: #fff;\r\n}\r\n\r\n/*\r\n    ============================================\r\n    ******* MEDIA QUERY *******\r\n    ============================================\r\n*/\r\n@media only screen and (min-width: 48rem) {\r\n  .items-container {\r\n    grid-template-columns: 1fr 1fr;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 64rem) {\r\n  .items-container {\r\n    grid-template-columns: 1fr 1fr 1fr;\r\n  }\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -479,6 +479,7 @@ module.exports = function (cssWithMappingToString) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "categories": () => (/* binding */ categories),
 /* harmony export */   "processPageResult": () => (/* binding */ processPageResult),
 /* harmony export */   "getDetailsForItem": () => (/* binding */ getDetailsForItem)
 /* harmony export */ });
@@ -486,8 +487,14 @@ __webpack_require__.r(__webpack_exports__);
 const ccBaseUrl = 'https://api.creativecommons.engineering/v1/images';
 const header = new Headers({ 'Content-type': 'application/json; charset=UTF-8' });
 
-const fetchPage = async (pageNum) => {
-  const result = await fetch(`${ccBaseUrl}?categories=photograph&page=${pageNum}`, {
+const categories = {
+  options: ['photograph', 'illustration', 'digitized_artwork'],
+  active: 'illustration',
+};
+
+const fetchPage = async (pageNum, itemsPerPage) => {
+  if (pageNum === null) { pageNum = 1; }
+  const result = await fetch(`${ccBaseUrl}?categories=${categories.active}&page_size=${itemsPerPage}&page=${pageNum}`, {
     method: 'GET',
     headers: header,
     mode: 'cors',
@@ -500,13 +507,13 @@ const fetchItemDetails = async (id) => {
   return result.json();
 };
 
-const getPageData = async (pageNum) => {
-  const dataFromApi = await fetchPage(pageNum);
+const getPageData = async (pageNum, itemsPerPage) => {
+  const dataFromApi = await fetchPage(pageNum, itemsPerPage);
   return dataFromApi.results;
 };
 
-const processPageResult = async (pageNum) => {
-  const returnedDataForPage = await getPageData(pageNum);
+const processPageResult = async (pageNum, itemsPerPage) => {
+  const returnedDataForPage = await getPageData(pageNum, itemsPerPage);
   return [...returnedDataForPage]
     .map((item) => ({ id: item.id, thumbnailUrl: item.thumbnail, title: item.title }));
 };
@@ -857,6 +864,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+const pageOpts = {
+  pageN: 1,
+  itemsXpage: 20,
+};
+
 const ulContainer = document.querySelector('[data-list-container]');
 const overlay = document.getElementsByClassName('overlay')[0];
 
@@ -864,7 +876,7 @@ const listenAddLikeBtns = (pageNum, buttons) => {
   buttons.forEach((btn) => {
     btn.addEventListener('click', async () => {
       await _involvment_api__WEBPACK_IMPORTED_MODULE_3__.postLike(btn.dataset.addLike);
-      renderPage(pageNum);
+      renderList(pageNum);
     });
   });
 };
@@ -910,12 +922,12 @@ const listenCloseModalBtn = (childToBeRemoved) => {
   });
 };
 
-const renderPage = async (pageNum) => {
-  const processedData = await _cc_api__WEBPACK_IMPORTED_MODULE_1__.processPageResult(pageNum);
+const renderList = async (pageNum = pageOpts.pageN, itemsPerPage = pageOpts.itemsXpage) => {
+  const processedData = await _cc_api__WEBPACK_IMPORTED_MODULE_1__.processPageResult(pageNum, itemsPerPage);
   const likes = await _involvment_api__WEBPACK_IMPORTED_MODULE_3__.getLikes();
   const numOfItems = _counter__WEBPACK_IMPORTED_MODULE_5__["default"].loadedItems(processedData);
   const listHeader = document.querySelector('[data-loaded-items]');
-  listHeader.textContent = `Category: Photographs.    Items loaded: ${numOfItems}`;
+  listHeader.textContent = `Category: ${_cc_api__WEBPACK_IMPORTED_MODULE_1__.categories.active} Items loaded: ${numOfItems} Page: ${pageNum}.`;
   (0,_utils__WEBPACK_IMPORTED_MODULE_2__.generateListHtml)(processedData, ulContainer, JSON.parse(likes));
   listenAddLikeBtns(pageNum, document.querySelectorAll('[data-add-like]'));
   listenOpenModalBtns(document.querySelectorAll('[data-open-modal]'));
@@ -932,7 +944,56 @@ const renderPage = async (pageNum) => {
   });
 };
 
-renderPage(7);
+const listenCategories = () => {
+  const categories = document.querySelectorAll('.d-navbar li');
+  const cats = document.querySelectorAll('.navbar ul li');
+  console.log('categories', cats[1]);
+  categories.forEach((cat) => {
+    // remove underline to all
+    cat.addEventListener('click', (e) => {
+      cats.forEach((unselected) => {
+        unselected.style.textDecoration = 'none';
+      });
+
+      // underline only targeted
+      e.target.style.textDecoration = 'underline';
+
+      // set active category
+      _cc_api__WEBPACK_IMPORTED_MODULE_1__.categories.active = e.target.dataset.category;
+      renderList();
+    });
+  });
+};
+
+const listenPageOptions = () => {
+  const form = document.getElementById('options');
+  const itemsXpageField = document.getElementById('items-per-page');
+  const pageNumField = document.getElementById('page-number');
+
+  itemsXpageField.value = pageOpts.itemsXpage;
+  pageNumField.value = pageOpts.pageN;
+  pageNumField.max = parseInt(1000 / pageOpts.itemsXpage, 10);
+
+  itemsXpageField.addEventListener('change', () => {
+    pageOpts.itemsXpage = itemsXpageField.value;
+    pageNumField.max = parseInt(1000 / pageOpts.itemsXpage, 10);
+  });
+
+  pageNumField.addEventListener('change', () => {
+    pageOpts.pageN = pageNumField.value;
+  });
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    renderList();
+    listenCategories();
+    listenPageOptions();
+  });
+};
+
+renderList();
+listenCategories();
+listenPageOptions();
 
 })();
 
