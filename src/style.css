@@ -92,6 +92,7 @@ body {
 
 .d-navbar li {
   margin-left: 1rem;
+  cursor: pointer;
 }
 
 .d-navbar li a {
