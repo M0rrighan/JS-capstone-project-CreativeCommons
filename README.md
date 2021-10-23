@@ -43,7 +43,7 @@ To get a local copy of this project, follow these simple steps:
 ## Authors
 
 👤 **Radmila M0rrighan**  
-- GitHub: [@]M0rrighan(https://github.com/M0rrighan)
+- GitHub: [@M0rrighan](https://github.com/M0rrighan)
 - Twitter: [@RadmilaStojceva](https://twitter.com/RadmilaStojceva)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/radmila-stojceva-71a838212/)
 
