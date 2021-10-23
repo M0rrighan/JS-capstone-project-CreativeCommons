@@ -1,65 +1,63 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# CreativeCommons
 
-# Project Name
+> This website App displays items information from Creative Commons. It also allows users to submit their comments and likes for their favorite item. All data is preserved, thanks to the external API, and involvement API
 
-> One paragraph statement about the project.
-
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
-
+![Desktop-Images](./images/deskimage.png)
 ## Built With
+- Javascript
+- Html
+- Css
+- Jest
+- Webpack
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
+## Live demo
+[LiveLink](https://github.com/M0rrighan/JS-capstone-project-CreativeCommons/dist/)
 
 
 ## Getting Started
+To get a local copy of this project, follow these simple steps:
+- Clone this clone this repo by typing: `git clone https://github.com/M0rrighan/JS-capstone-project-CreativeCommons`.git`, on your local terminal
+- Run `cd <name of the folder>` to access the project folder
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+## To make the project run in your local machine
+- You will need to set up or install webpack in your machine. Open the link bellow for set up
+- `https://webpack.js.org/guides/getting-started/#basic-setup`
 
+## Installation of Packages.Json
+ Run the code bellow inside your terminal to install Packages.Json in your local machine.
+- npm install --save-dev stylelint stylelint-config-standard
+- {
+  "extends": "stylelint-config-standard"
+}
+- npx stylelint "**/*.css"
 
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- Text editor
+- Git
+- Html
+- CSS
+- Js
+- webpack
 
 ## Authors
 
-👤 **Author1**
+👤 **Radmila M0rrighan**  
+- GitHub: [@]M0rrighan(https://github.com/M0rrighan)
+- Twitter: [@RadmilaStojceva](https://twitter.com/RadmilaStojceva)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/radmila-stojceva-71a838212/)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Lilian Francis**
+- GitHub: [@lilyfrancis](https://github.com/lilyfrancis)
+- Twitter: [@lilyfrancis](https://twitter.com/ifnotlily)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/lilianfrancis/)
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page]().
 
 ## Show your support
 
