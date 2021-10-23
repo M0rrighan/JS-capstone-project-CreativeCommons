@@ -26,12 +26,12 @@ describe('#loadedItems is returning the correct value', () => {
 describe('Comments Counter function Test', () => {
   const commentArray = [
     {
-      commentID: 01,
+      commentID: '01',
       itemName: 'cute item',
       commentDescription: 'This Item looks so good',
     },
     {
-      commentID: 02,
+      commentID: '02',
       itemName: 'Unique Item',
       commentDescription: 'Nice Item',
     },
@@ -44,12 +44,12 @@ describe('Comments Counter function Test', () => {
   test('should return comment array length of 1 ', () => {
     commentArray.push(
       {
-        commentID: 04,
+        commentID: '03',
         itemName: 'Amazing Item',
         commentDescription: 'This Item looks amazing',
       },
       {
-        commentID: 05,
+        commentID: '03',
         itemName: 'this is a nice item',
         commentDescription: 'no comment description',
       },
