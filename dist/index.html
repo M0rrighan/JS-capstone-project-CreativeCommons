@@ -14,21 +14,30 @@
   <header id="header">
     <div class="header-container">
       <div class="logo">
-        <a href="#">CreativeCommons</a>
+        <a href="#">
+          <img src="https://mirrors.creativecommons.org/presskit/logos/cc.logo.svg" alt="Creative Commons Logo">
+        </a>
       </div>
       <nav class="navbar">
         <ul class="d-navbar">
-          <li><a class="a-navbar" href="#Photo">Photograph</a></li>
-          <li><a class="a-navbar" href="#Illustrate">Illustrations</a></li>
-          <li><a class="a-navbar" href="#Digital">Digitalization</a></li>
+          <li data-category="photograph">Photographs</li>
+          <li data-category="illustration">Illustrations</li>
+          <li data-category="digitized_artwork">Digital Artwork</li>
         </ul>
-        <div class="humberger">
-          <i class="fa fa-bars"></i>
-        </div>
       </nav>
     </div>
   </header>
   <section>
+    <div class="page-options">
+      <form id="options">
+        <p>Advanced Page Options</p>
+        <label for="items-per-page">Items per page</label>
+        <input type="number" name="items-per-page" id="items-per-page" min="10" max="100">
+        <label for="page-number">Page Number</label>
+        <input type="number" name="page-number" id="page-number" min="1" max="50">
+        <input type="submit" value="Confirm" class="btn options-btn">
+      </form>
+    </div>
     <h2 data-loaded-items class="numOfItems"></h2>
     <ul data-list-container class="items-container">
     </ul>
