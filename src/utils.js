@@ -21,10 +21,12 @@ export const generateListHtml = (list, ulContainer, likesArray) => {
         <p>${title.substring(0, 20)}...</p>
       </div>
       <div class="likes">
-        <p data-add-like='${id}' class="btn">Click to Like</p>
+        <p data-add-like='${id}' class="btn">
+        <i class="far fa-heart"></i>
+        </p>
         <p>${likesNum} likes</p>
       </div>
-      <p data-open-modal class="btn">Comments</p>
+      <p data-open-modal class="btn comment-btn">Comments</p>
     </li>`;
   });
   ulContainer.innerHTML = ulInner;

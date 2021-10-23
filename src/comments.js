@@ -9,13 +9,13 @@ const displayComments = (ul, userComment) => {
   comment.appendChild(commentMeta);
   const name = document.createElement('p');
   name.style.textTransform = 'Capitalize';
-  name.innerText = userComment.username;
+  name.innerText = `${userComment.username}:`;
 
   const date = document.createElement('p');
   date.className = 'no-comments';
   date.innerText = userComment.creation_date;
-  commentMeta.appendChild(name);
   commentMeta.appendChild(date);
+  commentMeta.appendChild(name);
   const message = document.createElement('p');
   message.innerText = userComment.comment;
   message.style.textTransform = 'Capitalize';
@@ -27,35 +27,12 @@ const commentModal = (itemID) => {
   let commentCounter = 0;
   const modalInner = document.createElement('div');
   modalInner.className = 'modal-inner';
-  // const modalHeader = document.createElement('div');
-  // modalHeader.className = 'modal-header';
-  // modalInner.appendChild(modalHeader);
-  // const closeBtn = document.createElement('button');
-  // closeBtn.className = 'close-modal icn-btn';
-  // closeBtn.innerHTML = '&times;';
-  // closeBtn.addEventListener('click', () => {
-  //   modal.style.display = 'none';
-  // });
-  // modalHeader.appendChild(closeBtn);
   const modalDetails = document.createElement('div');
   modalDetails.className = 'modal-details';
   modalInner.appendChild(modalDetails);
-  // const modalImg = document.createElement('img');
-  // modalImg.className = 'modal-img';
-  // modalImg.src = meal.strMealThumb;
-  // modalDetails.appendChild(modalImg);
   const modalMeta = document.createElement('div');
   modalMeta.className = 'modal-meta';
   modalDetails.appendChild(modalMeta);
-  // const modalTitle = document.createElement('h4');
-  // modalTitle.className = 'modal-title';
-  // modalTitle.innerText = meal.strMeal;
-  // modalMeta.appendChild(modalTitle);
-  // const modalDesc = document.createElement('p');
-  // modalDesc.className = 'modal-desc';
-  // modalDesc.innerText = meal.strInstructions;
-  // modalMeta.appendChild(modalDesc);
-
   const allComments = document.createElement('div');
   allComments.className = 'all-comments';
   modalMeta.appendChild(allComments);
@@ -95,6 +72,7 @@ const commentModal = (itemID) => {
   commenterMessage.rows = 5;
   commenterMessage.className = 'comment-message';
   commenterMessage.placeholder = 'Your Message';
+  commenterMessage.attributes.required = true;
   form.appendChild(commenterMessage);
   const formButton = document.createElement('button');
   formButton.className = 'btn btn-alt';
@@ -113,7 +91,7 @@ const commentModal = (itemID) => {
           if (data === 'No comments available for this item') {
             commentUl.innerHTML = `<li class="no-comments">${`${data}. Add a new comment`}</li>`;
           } else {
-            allCommentsTitle.innerText = `All Comments(${commentCounter + 1})`;
+            allCommentsTitle.innerText = `Comments(${commentCounter + 1})`;
             data.forEach((userComment) => {
               displayComments(commentUl, userComment);
             });

@@ -31,16 +31,18 @@ const listenOpenModalBtns = (buttons) => {
       modal.classList.add('modal');
       modal.classList.add('active');
       modal.innerHTML = `
-      <p data-close-modal class="btn close_modal"> Close </p>
+      <p data-close-modal class="btn close_modal">
+      <i class="far fa-times-square"></i>
+      </p>
       <a href="${url}" target="_blank" class="image-placeholder">
           <img src="${url}" alt="${title}">
       </a>
-      <p>${title}</p>
+      <h2>${title}</h2>
       <div class="item-details">
-        <p>Creator: ${(creator !== null) ? creator : 'Unknown'}</p>
-        <p>License: ${license}</p>      
-        <p>Source: ${source}</p>
-        <p><a href="${sourcePageUrl}"> Visit Source</a></p>
+        <p> <i class="fas fa-info"></i> Creator: ${(creator !== null) ? creator : 'Unknown'}</p>
+        <p> <i class="fas fa-info"></i> License: ${license}</p>      
+        <p> <i class="fas fa-info"></i> Source: ${source}</p>
+        <p> <i class="fas fa-info"></i> <a href="${sourcePageUrl}">Visit Source</a></p>
       </div>   
       `;
       document.querySelector('body').appendChild(modal);
@@ -66,6 +68,17 @@ const renderPage = async (pageNum) => {
   generateListHtml(processedData, ulContainer, JSON.parse(likes));
   listenAddLikeBtns(pageNum, document.querySelectorAll('[data-add-like]'));
   listenOpenModalBtns(document.querySelectorAll('[data-open-modal]'));
+
+  // positioning section - layout
+  const section = document.querySelector('section');
+  const header = document.querySelector('header');
+  const footer = document.querySelector('footer');
+  section.style.top = `${header.offsetHeight + 16}px`;
+  section.style.height = `calc(100vh - ${header.offsetHeight + footer.offsetHeight + 32}px)`;
+  window.addEventListener('resize', () => {
+    section.style.top = `${header.offsetHeight + 16}px`;
+    section.style.height = `calc(100vh - ${header.offsetHeight + footer.offsetHeight + 32}px)`;
+  });
 };
 
 renderPage(7);
