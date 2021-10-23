@@ -22,3 +22,39 @@ describe('#loadedItems is returning the correct value', () => {
     expect(res2).toBe(3);
   });
 });
+
+describe('Comments Counter function Test', () => {
+  const commentArray = [
+    {
+      commentID: 01,
+      itemName: 'cute item',
+      commentDescription: 'This Item looks so good',
+    },
+    {
+      commentID: 02,
+      itemName: 'Unique Item',
+      commentDescription: 'Nice Item',
+    },
+  ];
+  test('should return comment array length of 2', () => {
+    const commentLength = counter.comments(commentArray);
+    expect(commentLength).toBe(2);
+  });
+
+  test('should return comment array length of 1 ', () => {
+    commentArray.push(
+      {
+        commentID: 04,
+        itemName: 'Amazing Item',
+        commentDescription: 'This Item looks amazing',
+      },
+      {
+        commentID: 05,
+        itemName: 'this is a nice item',
+        commentDescription: 'no comment description',
+      },
+    );
+    const commentLength = counter.comments(commentArray);
+    expect(commentLength).toBe(4);
+  });
+});
